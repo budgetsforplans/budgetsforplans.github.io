@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetKaki - Personal Finance Planner for iOS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>💰 BudgetKaki</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#scenario">How It Works</a></li>
+                <li><a href="#premium">Premium</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Take Control of Your Finances</h1>
+                <p class="hero-subtitle">BudgetKaki is a powerful personal finance planner that helps you build budgets, track entries, and measure progress toward your financial goals with clear insights.</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">Download on App Store</a>
+                    <a href="#scenario" class="btn btn-secondary">See How It Works</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="screenshot-placeholder">
+                    <p>📱 App Screenshot</p>
+                    <span>Main dashboard showing plans and metrics</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section class="overview">
+        <div class="container">
+            <h2>Why BudgetKaki?</h2>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="icon">📊</div>
+                    <h3>Smart Budgeting</h3>
+                    <p>Create plans for yearly budgets, short-term projects, or focused savings targets with customizable currencies and billing cycles.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="icon">💡</div>
+                    <h3>Intelligent Insights</h3>
+                    <p>Get cash-flow alerts, track spending trends, and receive smart warnings before you run short on funds.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="icon">🎯</div>
+                    <h3>Goal Tracking</h3>
+                    <p>Set savings goals and monitor your progress with visual indicators that keep you motivated and on track.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="icon">🔄</div>
+                    <h3>CloudKit Sync</h3>
+                    <p>Your financial data seamlessly syncs across all your Apple devices with iCloud integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Scenario Section -->
+    <section id="scenario" class="scenario">
+        <div class="container">
+            <h2>Meet Sarah: A BudgetKaki Success Story</h2>
+            <p class="section-subtitle">See how Sarah uses BudgetKaki to manage her finances, save for a vacation, and stay on top of her bills.</p>
+
+            <div class="scenario-steps">
+                <!-- Step 1 -->
+                <div class="scenario-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Creating Her First Budget</h3>
+                        <p>Sarah is a 28-year-old graphic designer who wants to save $3,000 for a vacation to Japan in 6 months while managing her monthly expenses. She starts by creating a new plan in BudgetKaki.</p>
+                        <div class="step-details">
+                            <ul>
+                                <li><strong>Plan Name:</strong> "2025 Budget"</li>
+                                <li><strong>Currency:</strong> USD</li>
+                                <li><strong>Time Period:</strong> January - December 2025</li>
+                                <li><strong>Card Billing Day:</strong> 15th (her credit card due date)</li>
+                            </ul>
+                        </div>
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Create New Plan</p>
+                            <span>Shows the plan creation screen with fields filled in</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="scenario-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Adding Income & Expenses</h3>
+                        <p>Sarah adds her regular income and recurring monthly expenses. BudgetKaki makes it easy to mark entries as recurring so she doesn't have to re-enter them every month.</p>
+                        <div class="step-details">
+                            <h4>Income Entries:</h4>
+                            <ul>
+                                <li>💵 Monthly Salary: $4,500 (recurring, 1st of each month)</li>
+                                <li>💵 Freelance Work: $500 (recurring, 15th of each month)</li>
+                            </ul>
+                            <h4>Expense Entries:</h4>
+                            <ul>
+                                <li>🏠 Rent: $1,200 (recurring, tagged "Housing")</li>
+                                <li>🚗 Car Payment: $350 (recurring, tagged "Transportation")</li>
+                                <li>📱 Phone Bill: $80 (recurring, tagged "Utilities")</li>
+                                <li>🍕 Groceries: $400 (recurring, tagged "Food")</li>
+                                <li>💳 Subscriptions: $50 (recurring, tagged "Entertainment")</li>
+                            </ul>
+                        </div>
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Entry List</p>
+                            <span>Shows the list of income and expense entries with tags</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="scenario-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Setting a Vacation Goal</h3>
+                        <p>With the Insights & Goals premium feature, Sarah creates a savings goal for her Japan trip. The app shows her exactly how much she needs to save each month to reach her target.</p>
+                        <div class="step-details">
+                            <ul>
+                                <li><strong>Goal Name:</strong> "Japan Vacation"</li>
+                                <li><strong>Target Amount:</strong> $3,000</li>
+                                <li><strong>Target Date:</strong> June 30, 2025</li>
+                                <li><strong>Monthly Savings Needed:</strong> $500</li>
+                            </ul>
+                        </div>
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Goal Progress</p>
+                            <span>Shows the goal card with progress bar and savings tracker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="scenario-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Tracking Daily Spending</h3>
+                        <p>Throughout the month, Sarah adds one-time expenses as they occur. She uses tags to categorize them and the app's search feature to find specific transactions later.</p>
+                        <div class="step-details">
+                            <h4>Sample Daily Entries:</h4>
+                            <ul>
+                                <li>☕ Starbucks Coffee: $5.50 (tagged "Food")</li>
+                                <li>🎬 Movie Night: $15 (tagged "Entertainment")</li>
+                                <li>⛽ Gas Station: $45 (tagged "Transportation")</li>
+                                <li>👕 New Shirt: $30 (tagged "Shopping")</li>
+                            </ul>
+                        </div>
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Add Entry Screen</p>
+                            <span>Shows the quick entry form with tag selection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="scenario-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Monitoring with Charts & Insights</h3>
+                        <p>Sarah swipes through the triple chart carousel to visualize her spending patterns. The Insights feed alerts her when she's spending more than usual on dining out.</p>
+                        <div class="step-details">
+                            <h4>Dashboard Metrics:</h4>
+                            <ul>
+                                <li><strong>Today's Position:</strong> +$2,920</li>
+                                <li><strong>Month to Date:</strong> +$1,850</li>
+                                <li><strong>Projected Month End:</strong> +$2,400</li>
+                                <li><strong>Top Spending Category:</strong> Housing ($1,200)</li>
+                            </ul>
+                            <h4>Smart Insights:</h4>
+                            <ul>
+                                <li>💡 "Food spending up 15% this week"</li>
+                                <li>💡 "On track to meet Japan Vacation goal"</li>
+                                <li>⚠️ "Card bill due in 3 days - $450 needed"</li>
+                            </ul>
+                        </div>
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Charts View</p>
+                            <span>Shows expense/income/balance charts with metrics grid</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="scenario-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Exporting Reports</h3>
+                        <p>At the end of the month, Sarah uses the Reporting subscription to generate a professional PDF report to share with her financial advisor. She filters the export to show only business-related expenses for tax purposes.</p>
+                        <div class="step-details">
+                            <ul>
+                                <li><strong>Export Format:</strong> PDF with custom header</li>
+                                <li><strong>Filter:</strong> Entries tagged "Business" only</li>
+                                <li><strong>Date Range:</strong> January 1-31, 2025</li>
+                                <li><strong>Result:</strong> Professional report with charts and detailed breakdown</li>
+                            </ul>
+                        </div>
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Export Options</p>
+                            <span>Shows export filter screen with format selection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="scenario-result">
+                    <h3>Sarah's Results After 3 Months</h3>
+                    <div class="result-stats">
+                        <div class="stat">
+                            <div class="stat-value">$1,650</div>
+                            <div class="stat-label">Saved for Japan Trip</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">22%</div>
+                            <div class="stat-label">Reduced Dining Expenses</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">0</div>
+                            <div class="stat-label">Missed Bill Payments</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">100%</div>
+                            <div class="stat-label">On Track for Vacation Goal</div>
+                        </div>
+                    </div>
+                    <p class="result-quote">"BudgetKaki has completely transformed how I manage money. The insights helped me identify unnecessary spending, and the goal tracker keeps me motivated. I'm finally taking that Japan trip!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Complete Feature List</h2>
+            <p class="section-subtitle">Everything you need to take control of your finances</p>
+
+            <!-- Core Features -->
+            <div class="feature-category">
+                <h3>Core Features (Free)</h3>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">📁</div>
+                        <h4>Plans & Budgets</h4>
+                        <p>Create unlimited budgets for different purposes - yearly budgets, short-term projects, or custom goals. Each plan has its own currency, billing cadence, and reporting preferences.</p>
+                        <div class="screenshot-placeholder small">
+                            <p>📸 Plan List</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">📝</div>
+                        <h4>Income & Expense Tracking</h4>
+                        <p>Add detailed entries with names, amounts, dates, and custom tags. Mark entries as recurring for subscriptions, paychecks, and regular bills that repeat monthly.</p>
+                        <div class="screenshot-placeholder small">
+                            <p>📸 Entry Form</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">🏷️</div>
+                        <h4>Smart Tags</h4>
+                        <p>Organize transactions with custom tags like "Food," "Transportation," "Housing." Use tags to filter entries and generate category-specific reports.</p>
+                        <div class="screenshot-placeholder small">
+                            <p>📸 Tag Selection</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">📊</div>
+                        <h4>Visual Charts</h4>
+                        <p>Swipe through expense, income, and balance charts. See your financial trends at a glance with interactive visualizations and monthly comparisons.</p>
+                        <div class="screenshot-placeholder small">
+                            <p>📸 Chart Carousel</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">🔍</div>
+                        <h4>Entry Search</h4>
+                        <p>Quickly find transactions by name, tag, or amount. Filter and sort your complete transaction history to locate specific entries.</p>
+                        <div class="screenshot-placeholder small">
+                            <p>📸 Search Interface</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">📄</div>
+                        <h4>CSV Export</h4>
+                        <p>Export your financial data to CSV format from Plan Settings. Perfect for importing into Excel or sharing with your accountant.</p>
+                        <div class="screenshot-placeholder small">
+                            <p>📸 CSV Export</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">📥</div>
+                        <h4>Data Import</h4>
+                        <p>Import entries from CSV files when creating plans or from plan settings. Bulk import multiple plans at once from a folder of CSV files.</p>
+                        <div class="screenshot-placeholder small">
+                            <p>📸 Import Screen</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">💱</div>
+                        <h4>Multi-Currency Support</h4>
+                        <p>Select from a wide range of currencies for each plan. Perfect for travelers, expats, or managing budgets in different currencies.</p>
+                        <div class="screenshot-placeholder small">
+                            <p>📸 Currency Picker</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">📅</div>
+                        <h4>Card Billing Day</h4>
+                        <p>Set your credit card billing day to track payment cycles. Get a clear view of your position relative to upcoming bill due dates.</p>
+                        <div class="screenshot-placeholder small">
+                            <p>📸 Billing Day</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">📦</div>
+                        <h4>Archive Plans</h4>
+                        <p>Archive completed or unused plans to keep your active list focused. Archived plans can be reviewed and restored anytime.</p>
+                        <div class="screenshot-placeholder small">
+                            <p>📸 Archive View</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy & Security -->
+            <div class="feature-category">
+                <h3>Privacy & Security</h3>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">🔐</div>
+                        <h4>Biometric Protection</h4>
+                        <p>Secure your financial data with Face ID or Touch ID. Enable optional biometric authentication from Settings to protect sensitive information.</p>
+                        <div class="screenshot-placeholder small">
+                            <p>📸 Security Settings</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">☁️</div>
+                        <h4>CloudKit Sync</h4>
+                        <p>Your data automatically syncs across all your Apple devices via iCloud. Access your budgets on iPhone and iPad seamlessly.</p>
+                        <div class="screenshot-placeholder small">
+                            <p>📸 Sync Status</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">🩺</div>
+                        <h4>Diagnostics Center</h4>
+                        <p>Monitor app health and sync status. View non-critical warnings and data validation messages from the Settings screen.</p>
+                        <div class="screenshot-placeholder small">
+                            <p>📸 Diagnostics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Platforms -->
+            <div class="feature-category">
+                <h3>Additional Platforms</h3>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">⌚</div>
+                        <h4>Apple Watch App</h4>
+                        <p>View plan snapshots directly on your wrist. Quick access to your current financial position without pulling out your phone.</p>
+                        <div class="screenshot-placeholder small">
+                            <p>📸 Watch App</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">📱</div>
+                        <h4>Home Screen Widgets</h4>
+                        <p>Add budget widgets to your home screen for at-a-glance updates. See your current position without opening the app.</p>
+                        <div class="screenshot-placeholder small">
+                            <p>📸 Widget Gallery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Features Section -->
+    <section id="premium" class="premium">
+        <div class="container">
+            <h2>Premium Features</h2>
+            <p class="section-subtitle">Unlock advanced capabilities with optional in-app purchases</p>
+
+            <div class="premium-tiers">
+                <!-- Insights & Goals -->
+                <div class="premium-tier">
+                    <div class="tier-badge">One-Time Purchase</div>
+                    <h3>💡 Insights & Goals</h3>
+                    <p class="tier-description">Unlock smarter planning with cash-flow alerts, spending insights, and comprehensive goal tracking.</p>
+
+                    <div class="tier-features">
+                        <h4>What's Included:</h4>
+                        <ul>
+                            <li>
+                                <strong>Smart Cashflow & Bill Guard</strong>
+                                <p>Get alerts when you're at risk of running short before your next paycheck or card bill due date.</p>
+                            </li>
+                            <li>
+                                <strong>Insights Feed</strong>
+                                <p>Track trend changes across income, expenses, and savings with actionable insights like "Food spending up 15% this week."</p>
+                            </li>
+                            <li>
+                                <strong>Goal Progress Tracking</strong>
+                                <p>Set savings targets with deadlines and monitor progress with visual indicators. See exactly how much to save each period to stay on track.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="screenshot-placeholder">
+                        <p>📸 Insights Dashboard</p>
+                        <span>Shows insights feed and goal progress cards</span>
+                    </div>
+
+                    <a href="#download" class="btn btn-primary">Unlock Insights & Goals</a>
+                </div>
+
+                <!-- Reporting -->
+                <div class="premium-tier featured">
+                    <div class="tier-badge">Subscription</div>
+                    <h3>📊 Reporting</h3>
+                    <p class="tier-description">Professional export capabilities with custom branding and advanced filtering options.</p>
+
+                    <div class="tier-features">
+                        <h4>What's Included:</h4>
+                        <ul>
+                            <li>
+                                <strong>PDF Reports</strong>
+                                <p>Generate polished PDF reports with custom headers and footers. Perfect for sharing with financial advisors or business partners.</p>
+                            </li>
+                            <li>
+                                <strong>Excel Exports</strong>
+                                <p>Export to .xlsx format for advanced spreadsheet analysis. Full compatibility with Microsoft Excel and Google Sheets.</p>
+                            </li>
+                            <li>
+                                <strong>Export Filters</strong>
+                                <p>Filter exports by date range or specific tags. Only export business expenses for taxes, or vacation spending for review.</p>
+                            </li>
+                            <li>
+                                <strong>Custom Branding</strong>
+                                <p>Add header and footer images to PDF exports. Upload your company logo or personal branding for professional reports.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="screenshot-placeholder">
+                        <p>📸 Export Options</p>
+                        <span>Shows PDF/Excel export with filter interface</span>
+                    </div>
+
+                    <div class="subscription-options">
+                        <div class="subscription-option">
+                            <div class="price">$X.XX/month</div>
+                            <div class="period">Monthly</div>
+                        </div>
+                        <div class="subscription-option recommended">
+                            <div class="recommended-badge">Best Value</div>
+                            <div class="price">$XX.XX/year</div>
+                            <div class="period">Annual (Save XX%)</div>
+                        </div>
+                    </div>
+
+                    <a href="#download" class="btn btn-primary">Subscribe to Reporting</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2>Ready to Take Control?</h2>
+            <p class="section-subtitle">Download BudgetKaki today and start your journey to financial clarity</p>
+
+            <div class="download-content">
+                <div class="download-features">
+                    <div class="check-item">✓ Free core features with unlimited plans</div>
+                    <div class="check-item">✓ CloudKit sync across all devices</div>
+                    <div class="check-item">✓ Apple Watch & Widget support</div>
+                    <div class="check-item">✓ Optional premium features available</div>
+                    <div class="check-item">✓ Regular updates and improvements</div>
+                </div>
+
+                <div class="app-store-button">
+                    <div class="screenshot-placeholder">
+                        <p>📱 App Store Badge</p>
+                        <span>Download on the App Store</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="requirements">
+                <h4>Requirements</h4>
+                <p>Requires iOS 15.0 or later • Compatible with iPhone and iPad • Apple Watch app available • iCloud account recommended for sync</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>💰 BudgetKaki</h3>
+                    <p>Take control of your finances with intelligent budgeting.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#premium">Premium</a></li>
+                            <li><a href="#download">Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#scenario">How It Works</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BudgetKaki. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
