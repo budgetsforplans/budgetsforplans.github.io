@@ -2,18 +2,20 @@
    CSS Variables & Reset
    ==================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap');
+
 :root {
     /* Colors */
-    --primary-color: #007AFF;
-    --secondary-color: #5856D6;
-    --success-color: #34C759;
-    --warning-color: #FF9500;
-    --error-color: #FF3B30;
+    --primary-color: #0EA5E9;
+    --secondary-color: #14B8A6;
+    --success-color: #22C55E;
+    --warning-color: #F97316;
+    --error-color: #EF4444;
     --background: #FFFFFF;
-    --background-secondary: #F5F5F7;
-    --text-primary: #1D1D1F;
-    --text-secondary: #6E6E73;
-    --border-color: #D2D2D7;
+    --background-secondary: #F6F7F9;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --border-color: #D7DBE0;
 
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -23,13 +25,14 @@
     --spacing-xl: 6rem;
 
     /* Typography */
-    --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --font-primary: 'Manrope', 'Segoe UI', sans-serif;
+    --font-display: 'Fraunces', 'Georgia', serif;
     --font-mono: 'SF Mono', Monaco, 'Courier New', monospace;
 
     /* Shadows */
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+    --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
+    --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.12);
+    --shadow-lg: 0 20px 40px rgba(15, 23, 42, 0.16);
 
     /* Border Radius */
     --radius-sm: 8px;
@@ -53,6 +56,11 @@ body {
     background-color: var(--background);
     line-height: 1.6;
     overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
 }
 
 .container {
@@ -86,6 +94,22 @@ body {
     font-weight: 700;
 }
 
+.brand-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.brand-mark img {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -109,7 +133,7 @@ body {
 
 .hero {
     padding: var(--spacing-xl) 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0EA5E9 0%, #14B8A6 60%, #10B981 100%);
     color: white;
 }
 
@@ -171,13 +195,61 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* App Store badge */
+.app-store-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-store-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+}
+
+.app-icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 22px;
+    box-shadow: var(--shadow-md);
+}
+
+.app-store-badge {
+    height: 72px;
+}
+
+/* Privacy section */
+.privacy {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--background-secondary);
+}
+
+.privacy .section-subtitle {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-secondary);
+}
+
+.privacy-card {
+    max-width: 720px;
+    margin: 0 auto;
+    background: white;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    font-size: 1.05rem;
+}
+
 /* ====================================
    Screenshot Placeholders
    ==================================== */
 
 .screenshot-placeholder {
-    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
-    border: 2px dashed rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.12) 0%, rgba(20, 184, 166, 0.12) 100%);
+    border: 2px dashed rgba(255, 255, 255, 0.35);
     border-radius: var(--radius-lg);
     padding: var(--spacing-lg);
     text-align: center;
@@ -573,6 +645,20 @@ body {
 .tier-features p {
     color: var(--text-secondary);
     font-size: 0.9rem;
+}
+
+.feature-badge {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: white;
+    background: var(--primary-color);
+    border-radius: 999px;
+    vertical-align: middle;
 }
 
 .subscription-options {

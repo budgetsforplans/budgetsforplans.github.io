@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BudgetKaki - Personal Finance Planner for iOS</title>
+    <title>Budgets For Plans - Personal Finance Planner for iOS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,7 +11,10 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <h1>💰 BudgetKaki</h1>
+                <div class="brand-mark">
+                    <img src="images/app-icon.png" alt="Budgets For Plans App Icon">
+                    <span>Budgets For Plans</span>
+                </div>
             </div>
             <ul class="nav-menu">
                 <li><a href="#features">Features</a></li>
@@ -27,7 +30,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Take Control of Your Finances</h1>
-                <p class="hero-subtitle">BudgetKaki is a powerful personal finance planner that helps you build budgets, track entries, and measure progress toward your financial goals with clear insights.</p>
+                <p class="hero-subtitle">Budgets For Plans helps you plan budgets, track every entry, and stay on top of goals with clear, on-device insights.</p>
                 <div class="hero-buttons">
                     <a href="#download" class="btn btn-primary">Download on App Store</a>
                     <a href="#scenario" class="btn btn-secondary">See How It Works</a>
@@ -45,22 +48,22 @@
     <!-- Overview Section -->
     <section class="overview">
         <div class="container">
-            <h2>Why BudgetKaki?</h2>
+            <h2>Why Budgets For Plans?</h2>
             <div class="overview-grid">
                 <div class="overview-card">
                     <div class="icon">📊</div>
                     <h3>Smart Budgeting</h3>
-                    <p>Create plans for yearly budgets, short-term projects, or focused savings targets with customizable currencies and billing cycles.</p>
+                    <p>Create plans for yearly budgets, short-term projects, or focused savings targets with flexible currencies and billing cycles.</p>
                 </div>
                 <div class="overview-card">
                     <div class="icon">💡</div>
                     <h3>Intelligent Insights</h3>
-                    <p>Get cash-flow alerts, track spending trends, and receive smart warnings before you run short on funds.</p>
+                    <p>Track spending trends, spot anomalies, and stay ahead of cash-flow risks.</p>
                 </div>
                 <div class="overview-card">
                     <div class="icon">🎯</div>
                     <h3>Goal Tracking</h3>
-                    <p>Set savings goals and monitor your progress with visual indicators that keep you motivated and on track.</p>
+                    <p>Set savings goals and monitor progress with clear, visual indicators.</p>
                 </div>
                 <div class="overview-card">
                     <div class="icon">🔄</div>
@@ -74,8 +77,8 @@
     <!-- User Scenario Section -->
     <section id="scenario" class="scenario">
         <div class="container">
-            <h2>Meet Sarah: A BudgetKaki Success Story</h2>
-            <p class="section-subtitle">See how Sarah uses BudgetKaki to manage her finances, save for a vacation, and stay on top of her bills.</p>
+            <h2>Meet Sarah: A Budgets For Plans Success Story</h2>
+            <p class="section-subtitle">See how Sarah uses Budgets For Plans to manage her finances, save for a vacation, and stay on top of her bills.</p>
 
             <div class="scenario-steps">
                 <!-- Step 1 -->
@@ -83,7 +86,7 @@
                     <div class="step-number">1</div>
                     <div class="step-content">
                         <h3>Creating Her First Budget</h3>
-                        <p>Sarah is a 28-year-old graphic designer who wants to save $3,000 for a vacation to Japan in 6 months while managing her monthly expenses. She starts by creating a new plan in BudgetKaki.</p>
+                        <p>Sarah is a 28-year-old graphic designer who wants to save $3,000 for a vacation to Japan in 6 months while managing her monthly expenses. She starts by creating a new plan in Budgets For Plans.</p>
                         <div class="step-details">
                             <ul>
                                 <li><strong>Plan Name:</strong> "2025 Budget"</li>
@@ -104,20 +107,21 @@
                     <div class="step-number">2</div>
                     <div class="step-content">
                         <h3>Adding Income & Expenses</h3>
-                        <p>Sarah adds her regular income and recurring monthly expenses. BudgetKaki makes it easy to mark entries as recurring so she doesn't have to re-enter them every month.</p>
+                        <p>Sarah adds her regular income and recurring expenses. With Advanced Tools, she sets up recurring expenses so bills stay current without re-entry, and logs FX purchases that auto-convert to her plan currency.</p>
                         <div class="step-details">
                             <h4>Income Entries:</h4>
                             <ul>
-                                <li>💵 Monthly Salary: $4,500 (recurring, 1st of each month)</li>
-                                <li>💵 Freelance Work: $500 (recurring, 15th of each month)</li>
+                                <li>💵 Monthly Salary: $4,500 (recurring income, 1st of each month)</li>
+                                <li>💵 Freelance Work: $500 (recurring income, 15th of each month)</li>
                             </ul>
                             <h4>Expense Entries:</h4>
                             <ul>
-                                <li>🏠 Rent: $1,200 (recurring, tagged "Housing")</li>
-                                <li>🚗 Car Payment: $350 (recurring, tagged "Transportation")</li>
-                                <li>📱 Phone Bill: $80 (recurring, tagged "Utilities")</li>
-                                <li>🍕 Groceries: $400 (recurring, tagged "Food")</li>
-                                <li>💳 Subscriptions: $50 (recurring, tagged "Entertainment")</li>
+                                <li>🏠 Rent: $1,200 (recurring expense, tagged "Housing")</li>
+                                <li>🚗 Car Payment: $350 (recurring expense, tagged "Transportation")</li>
+                                <li>📱 Phone Bill: $80 (recurring expense, tagged "Utilities")</li>
+                                <li>🍕 Groceries: $400 (recurring expense, tagged "Food")</li>
+                                <li>💳 Subscriptions: $50 (recurring expense, tagged "Entertainment")</li>
+                                <li>✈️ Flight Ticket: AED 1,200 (auto-converted to USD with FX entry)</li>
                             </ul>
                         </div>
                         <div class="screenshot-placeholder">
@@ -219,6 +223,27 @@
                     </div>
                 </div>
 
+                <!-- Step 7 -->
+                <div class="scenario-step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h3>Managing Multiple Credit Cards</h3>
+                        <p>Sarah has three credit cards with different reward programs. She subscribes to Advanced Tools to use Card Aliases, which help her track which expenses go on which card without storing sensitive card details.</p>
+                        <div class="step-details">
+                            <ul>
+                                <li><strong>Card 1:</strong> "Travel Rewards" - for flights and hotels</li>
+                                <li><strong>Card 2:</strong> "Cash Back" - for dining and groceries</li>
+                                <li><strong>Card 3:</strong> "Gas Card" - for fuel purchases</li>
+                                <li><strong>Benefit:</strong> Sees due-by-card summary showing total owed on each card</li>
+                            </ul>
+                        </div>
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Card Alias Management</p>
+                            <span>Shows card alias list and due-by-card summary with totals</span>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Results -->
                 <div class="scenario-result">
                     <h3>Sarah's Results After 3 Months</h3>
@@ -240,7 +265,7 @@
                             <div class="stat-label">On Track for Vacation Goal</div>
                         </div>
                     </div>
-                    <p class="result-quote">"BudgetKaki has completely transformed how I manage money. The insights helped me identify unnecessary spending, and the goal tracker keeps me motivated. I'm finally taking that Japan trip!"</p>
+                    <p class="result-quote">"Budgets For Plans has completely transformed how I manage money. The insights helped me identify unnecessary spending, and the goal tracker keeps me motivated. I'm finally taking that Japan trip!"</p>
                 </div>
             </div>
         </div>
@@ -268,7 +293,7 @@
                     <div class="feature-item">
                         <div class="feature-icon">📝</div>
                         <h4>Income & Expense Tracking</h4>
-                        <p>Add detailed entries with names, amounts, dates, and custom tags. Mark entries as recurring for subscriptions, paychecks, and regular bills that repeat monthly.</p>
+                        <p>Add detailed entries with names, amounts, dates, and custom tags. Use Advanced Tools to create recurring expenses for subscriptions and regular bills.</p>
                         <div class="screenshot-placeholder small">
                             <p>📸 Entry Form</p>
                         </div>
@@ -411,7 +436,7 @@
     <section id="premium" class="premium">
         <div class="container">
             <h2>Premium Features</h2>
-            <p class="section-subtitle">Unlock advanced capabilities with optional in-app purchases</p>
+            <p class="section-subtitle">Choose one-time upgrades or subscriptions for deeper planning power</p>
 
             <div class="premium-tiers">
                 <!-- Insights & Goals -->
@@ -443,6 +468,13 @@
                         <span>Shows insights feed and goal progress cards</span>
                     </div>
 
+                    <div class="subscription-options">
+                        <div class="subscription-option">
+                            <div class="price">$4.98</div>
+                            <div class="period">One-time</div>
+                        </div>
+                    </div>
+
                     <a href="#download" class="btn btn-primary">Unlock Insights & Goals</a>
                 </div>
 
@@ -450,7 +482,7 @@
                 <div class="premium-tier featured">
                     <div class="tier-badge">Subscription</div>
                     <h3>📊 Reporting</h3>
-                    <p class="tier-description">Professional export capabilities with custom branding and advanced filtering options.</p>
+                    <p class="tier-description">Professional exports with custom branding, detailed breakdowns, and filters built for real reporting workflows.</p>
 
                     <div class="tier-features">
                         <h4>What's Included:</h4>
@@ -481,17 +513,89 @@
 
                     <div class="subscription-options">
                         <div class="subscription-option">
-                            <div class="price">$X.XX/month</div>
+                            <div class="price">$4.98/month</div>
                             <div class="period">Monthly</div>
                         </div>
                         <div class="subscription-option recommended">
                             <div class="recommended-badge">Best Value</div>
-                            <div class="price">$XX.XX/year</div>
-                            <div class="period">Annual (Save XX%)</div>
+                            <div class="price">$39.98/year</div>
+                            <div class="period">Annual (Save 33%)</div>
                         </div>
                     </div>
 
                     <a href="#download" class="btn btn-primary">Subscribe to Reporting</a>
+                </div>
+
+                <!-- Advanced Tools -->
+                <div class="premium-tier">
+                    <div class="tier-badge">Subscription</div>
+                    <h3>🔧 Advanced Tools</h3>
+                    <p class="tier-description">Power features for recurring expenses, credit card management, notifications, and automation workflows.</p>
+
+                    <div class="tier-features">
+                        <h4>What's Included:</h4>
+                        <ul>
+                            <li>
+                                <strong>Card Aliases</strong>
+                                <p>Organize credit card expenses by specific cards without storing sensitive details. Track which expenses go on which card for better bill management.</p>
+                            </li>
+                            <li>
+                                <strong>Recurring Expenses</strong>
+                                <p>Create repeating bills with edit-all-future control. Pause or duplicate schedules as your budget changes.</p>
+                            </li>
+                            <li>
+                                <strong>FX Currency Entry <span class="feature-badge">New</span></strong>
+                                <p>Log entries in another currency and auto-convert to your plan currency using live FX rates.</p>
+                            </li>
+                            <li>
+                                <strong>Due by Card Summary</strong>
+                                <p>See expenses grouped by card alias with totals. Know exactly how much is due on each card at a glance.</p>
+                            </li>
+                            <li>
+                                <strong>Budget Notifications</strong>
+                                <p>Get alerts when budgets are exceeded or approaching limits. Stay informed about your spending in real-time.</p>
+                            </li>
+                            <li>
+                                <strong>Automation Hooks</strong>
+                                <p>Schedule workflows for plan updates and data management. Automate recurring budget tasks and updates.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="screenshot-placeholder">
+                        <p>📸 Recurring Expenses</p>
+                        <span>Shows recurring expenses list and due-by-card summary</span>
+                    </div>
+
+                    <div class="subscription-options">
+                        <div class="subscription-option">
+                            <div class="price">$4.98/month</div>
+                            <div class="period">Monthly</div>
+                        </div>
+                        <div class="subscription-option recommended">
+                            <div class="recommended-badge">Best Value</div>
+                            <div class="price">$39.98/year</div>
+                            <div class="period">Annual (Save 33%)</div>
+                        </div>
+                    </div>
+
+                    <a href="#download" class="btn btn-primary">Subscribe to Advanced Tools</a>
+                </div>
+
+                <!-- Lifetime -->
+                <div class="premium-tier">
+                    <div class="tier-badge">Lifetime</div>
+                    <h3>🏆 All Features Lifetime</h3>
+                    <p class="tier-description">One purchase that unlocks Insights & Goals, Reporting, and Advanced Tools forever.</p>
+
+                    <div class="subscription-options">
+                        <div class="subscription-option">
+                            <div class="price">$99.98</div>
+                            <div class="period">One-time</div>
+                        </div>
+                    </div>
+
+                    <a href="#download" class="btn btn-secondary">Get Lifetime Access</a>
                 </div>
             </div>
         </div>
@@ -501,7 +605,7 @@
     <section id="download" class="download">
         <div class="container">
             <h2>Ready to Take Control?</h2>
-            <p class="section-subtitle">Download BudgetKaki today and start your journey to financial clarity</p>
+            <p class="section-subtitle">Download Budgets For Plans today and start your journey to financial clarity</p>
 
             <div class="download-content">
                 <div class="download-features">
@@ -513,10 +617,10 @@
                 </div>
 
                 <div class="app-store-button">
-                    <div class="screenshot-placeholder">
-                        <p>📱 App Store Badge</p>
-                        <span>Download on the App Store</span>
-                    </div>
+                    <a class="app-store-link" href="https://apps.apple.com/us/app/budgets-for-plans/id1541339935" aria-label="Download on the App Store">
+                        <img class="app-icon" src="images/app-icon.png" alt="Budgets For Plans App Icon">
+                        <img class="app-store-badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=300x100" alt="Download on the App Store">
+                    </a>
                 </div>
             </div>
 
@@ -527,12 +631,26 @@
         </div>
     </section>
 
+    <!-- Privacy Section -->
+    <section id="privacy" class="privacy">
+        <div class="container">
+            <h2>Privacy by Design</h2>
+            <p class="section-subtitle">Your budget data stays on your device, always.</p>
+            <div class="privacy-card">
+                <p>Budgets For Plans processes all data on-device. No analytics are collected, and no data is sent off your device for any purpose.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3>💰 BudgetKaki</h3>
+                    <div class="brand-mark">
+                        <img src="images/app-icon.png" alt="Budgets For Plans App Icon">
+                        <span>Budgets For Plans</span>
+                    </div>
                     <p>Take control of your finances with intelligent budgeting.</p>
                 </div>
                 <div class="footer-links">
@@ -548,14 +666,14 @@
                         <h4>Resources</h4>
                         <ul>
                             <li><a href="#scenario">How It Works</a></li>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="mailto:anarahari@gmail.com">Support</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 BudgetKaki. All rights reserved.</p>
+                <p>&copy; 2025 Budgets For Plans. All rights reserved.</p>
             </div>
         </div>
     </footer>

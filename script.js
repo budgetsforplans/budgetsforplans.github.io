@@ -1,5 +1,5 @@
 /**
- * BudgetKaki Website JavaScript
+ * Budgets For Plans Website JavaScript
  * Handles smooth scrolling, animations, and interactive elements
  */
 
@@ -165,5 +165,5 @@ const createScrollProgress = () => {
 createScrollProgress();
 
 // Log page load
-console.log('BudgetKaki website loaded successfully!');
+console.log('Budgets For Plans website loaded successfully!');
 console.log('Ready to take control of your finances 💰');

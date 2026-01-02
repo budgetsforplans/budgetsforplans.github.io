@@ -1,6 +1,6 @@
-# BudgetKaki GitHub Pages Website
+# Budgets For Plans GitHub Pages Website
 
-This folder contains a complete static website for the BudgetKaki iOS app, designed to be hosted on GitHub Pages.
+This folder contains a complete static website for the Budgets For Plans iOS app, designed to be hosted on GitHub Pages.
 
 ## 📁 Contents
 
@@ -18,12 +18,12 @@ This folder contains a complete static website for the BudgetKaki iOS app, desig
    - Screenshot placeholder for main app interface
 
 2. **Overview**
-   - Four key value propositions of BudgetKaki
+   - Four key value propositions of Budgets For Plans
    - Visual cards highlighting main benefits
 
 3. **User Scenario: "Meet Sarah"**
-   - Complete 6-step walkthrough showing real-world usage
-   - Demonstrates how a user manages finances with BudgetKaki
+   - Complete 7-step walkthrough showing real-world usage
+   - Demonstrates how a user manages finances with Budgets For Plans
    - Includes:
      - Creating a budget
      - Adding income and expenses
@@ -31,6 +31,7 @@ This folder contains a complete static website for the BudgetKaki iOS app, desig
      - Tracking daily spending
      - Using charts and insights
      - Exporting reports
+     - Managing multiple credit cards with Card Aliases
    - Results section showing Sarah's achievements
 
 4. **Complete Features List**
@@ -67,6 +68,17 @@ This folder contains a complete static website for the BudgetKaki iOS app, desig
      - Export Filters (date range, tags)
      - Custom header/footer images
 
+   - **Advanced Tools** (Subscription):
+     - Card Aliases - Track expenses by specific credit cards
+     - Recurring Expenses - Create repeating bills with edit-all-future control
+     - FX Conversion - Convert exports into another currency with a manual rate
+     - Due by Card Summary - See totals owed on each card
+     - Budget Notifications - Alerts for spending limits
+     - Automation Hooks - Scheduled workflows for plan updates
+
+   - **All Features Lifetime** (One-time purchase):
+     - Unlocks Insights & Goals, Reporting, and Advanced Tools
+
 6. **Download Section**
    - Call-to-action with feature checklist
    - App requirements
@@ -92,10 +104,12 @@ Throughout the website, you'll find placeholder boxes for screenshots marked wit
    - Step 4: Add entry form
    - Step 5: Charts view with metrics grid
    - Step 6: Export options screen
+   - Step 7: Card alias management and due-by-card summary
 3. **Feature Items**: Small screenshots for each feature
 4. **Premium Features**:
    - Insights dashboard
    - Export/filter interface
+   - Card alias list and due-by-card summary
 5. **Download Section**: App Store badge
 
 ## 🚀 Deployment to GitHub Pages
@@ -165,17 +179,16 @@ Change the font family:
 </div>
 
 <!-- After -->
-<img src="images/dashboard.png" alt="BudgetKaki Dashboard" />
+<img src="images/dashboard.png" alt="Budgets For Plans Dashboard" />
 ```
 
 ### Updating Premium Pricing
 
-In `index.html`, find the subscription options section and update:
-
-```html
-<div class="price">$4.99/month</div>
-<div class="price">$49.99/year</div>
-```
+Current StoreKit pricing:
+- Insights & Goals: $4.98 one-time
+- Reporting: $4.98/month or $39.98/year
+- Advanced Tools: $4.98/month or $39.98/year
+- Lifetime All Features: $99.98 one-time
 
 ## 📱 Responsive Design
 
@@ -234,7 +247,7 @@ Features are organized by:
 
 ## 📄 License
 
-This website template is part of the BudgetKaki project.
+This website template is part of the Budgets For Plans project.
 
 ## 🤝 Contributing
 
@@ -248,7 +261,7 @@ To update the website:
 
 ## 📞 Support
 
-For questions about the website or BudgetKaki app, please refer to the main repository documentation.
+For questions about the website or Budgets For Plans app, please refer to the main repository documentation.
 
 ---
 
