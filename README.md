@@ -14,103 +14,86 @@ This folder contains a complete static website for the Budgets For Plans iOS app
 ### Sections Included:
 
 1. **Hero Section**
-   - Eye-catching introduction with call-to-action buttons
-   - Screenshot placeholder for main app interface
+   - App positioning and primary call-to-action
+   - Main dashboard screenshot
 
 2. **Overview**
-   - Four key value propositions of Budgets For Plans
-   - Visual cards highlighting main benefits
+   - Six value propositions covering plans, insights, reporting, sync, and iPad
 
-3. **User Scenario: "Meet Sarah"**
-   - Complete 7-step walkthrough showing real-world usage
-   - Demonstrates how a user manages finances with Budgets For Plans
-   - Includes:
-     - Creating a budget
-     - Adding income and expenses
-     - Setting savings goals
-     - Tracking daily spending
-     - Using charts and insights
-     - Exporting reports
-     - Managing multiple credit cards with Card Aliases
-   - Results section showing Sarah's achievements
+3. **On-Device Intelligence**
+   - ML features such as digest insights, anomaly detection, and NLP auto-tagging
 
-4. **Complete Features List**
+4. **iPad Features**
+   - Split view layouts, multi-window, drag & drop, keyboard shortcuts, and calendar heat map
+
+5. **User Scenarios**
+   - Five real-world stories showing budgeting, reporting, travel, iPad workflows, and family planning
+
+6. **Complete Features List**
    - **Core Features** (Free):
      - Plans & Budgets
-     - Income & Expense Tracking
-     - Smart Tags
-     - Visual Charts
-     - Entry Search
-     - CSV Export
-     - Data Import (including bulk import)
-     - Multi-Currency Support
-     - Card Billing Day
-     - Archive Plans
-
-   - **Privacy & Security**:
-     - Biometric Protection (Face ID/Touch ID)
-     - CloudKit Sync
-     - Diagnostics Center
-
-   - **Additional Platforms**:
-     - Apple Watch App
-     - Home Screen Widgets
-
-5. **Premium Features**
+     - Entries & Tags
+     - Charts & Metrics
+     - Search & Filters
+     - CSV Import/Export (including bulk import)
+     - Multi-currency plan settings
+     - Billing day tracking
+     - Archive plans
+   - **On-Device Intelligence**:
+     - Digest insights, NLP auto-tagging, and anomaly detection (tier-dependent)
    - **Insights & Goals** (One-time purchase):
      - Smart Cashflow & Bill Guard
      - Insights Feed
-     - Goal Progress Tracking
-
+     - Goals & Milestones
+     - Budget thresholds and monthly limits
    - **Reporting** (Subscription):
-     - PDF Reports with custom branding
-     - Excel Exports
-     - Export Filters (date range, tags)
-     - Custom header/footer images
-
+     - Balance sheet reports
+     - PDF & Excel exports
+     - Filters and custom branding
    - **Advanced Tools** (Subscription):
-     - Card Aliases - Track expenses by specific credit cards
-     - Recurring Expenses - Create repeating bills with edit-all-future control
-     - FX Conversion - Convert exports into another currency with a manual rate
-     - Due by Card Summary - See totals owed on each card
-     - Budget Notifications - Alerts for spending limits
-     - Automation Hooks - Scheduled workflows for plan updates
+     - Card aliases
+     - Recurring expenses
+     - FX entry & currency breakdown
+     - Auto-tagging rules + NLP suggestions
+     - Trends dashboard
+     - Smart alerts & digests
+   - **Privacy & Security**:
+     - Biometric protection
+     - Diagnostics center
+   - **Sync & Platforms**:
+     - CloudKit sync
+     - Apple Watch app
+     - Home screen widgets
 
-   - **All Features Lifetime** (One-time purchase):
-     - Unlocks Insights & Goals, Reporting, and Advanced Tools
+7. **Premium Features**
+   - Insights & Goals (one-time)
+   - Reporting (subscription)
+   - Advanced Tools (subscription)
+   - All Features Lifetime (one-time, Family Sharing eligible)
 
-6. **Download Section**
-   - Call-to-action with feature checklist
-   - App requirements
-   - App Store badge placeholder
+8. **Technical Highlights**
+   - NaturalLanguage, Core Data + CloudKit, Swift Concurrency, SwiftUI + Observation, WidgetKit, StoreKit 2
 
-7. **Footer**
-   - Navigation links
-   - Copyright information
+9. **Download Section**
+   - Feature checklist, requirements, App Store badge
 
-## 📸 Screenshot Placeholders
+10. **Privacy**
+   - On-device ML with optional iCloud sync
 
-Throughout the website, you'll find placeholder boxes for screenshots marked with:
-- 📱 emoji for full screenshots
-- 📸 emoji for smaller feature screenshots
+11. **Footer**
+   - Navigation and support links
 
-### Recommended Screenshots to Add:
+## 📸 Screenshots and Images
 
-1. **Hero Section**: Main dashboard showing plans and metrics
-2. **Scenario Steps**:
-   - Step 1: Create New Plan screen
-   - Step 2: Entry list with tags
-   - Step 3: Goal progress card
-   - Step 4: Add entry form
-   - Step 5: Charts view with metrics grid
-   - Step 6: Export options screen
-   - Step 7: Card alias management and due-by-card summary
-3. **Feature Items**: Small screenshots for each feature
-4. **Premium Features**:
-   - Insights dashboard
-   - Export/filter interface
-   - Card alias list and due-by-card summary
-5. **Download Section**: App Store badge
+All screenshots live in `ghpage/images`. Replace them with updated captures as the app evolves.
+
+### Key Assets:
+
+1. **Hero**: `screenshot-hero-dashboard.png`
+2. **Scenarios**: `scenario-*.png` (Sarah, Maya, Leo, Alex, Jordan stories)
+3. **Features**: `feature-*.png` (entries, charts, insights, reporting, alerts, etc.)
+4. **iPad**: `ipad-*.png` (split view, charts, drag & drop, multi-window)
+5. **Branding**: `app-icon.png`
 
 ## 🚀 Deployment to GitHub Pages
 
@@ -124,18 +107,18 @@ Throughout the website, you'll find placeholder boxes for screenshots marked wit
 
 ### Option 2: Docs Folder
 
-1. Rename `githubpage` folder to `docs`
+1. Rename `ghpage` folder to `docs`
 2. Move to repository root
 3. Go to repository Settings → Pages
 4. Select "Deploy from a branch"
 5. Choose "main" branch and "/docs"
 6. Save
 
-### Option 3: Keep as githubpage Folder
+### Option 3: Keep as ghpage Folder
 
 1. Go to repository Settings → Pages
 2. Select "Deploy from a branch"
-3. Choose "main" branch and "/githubpage"
+3. Choose "main" branch and "/ghpage"
 4. Save
 
 Your site will be available at: `https://[username].github.io/[repository-name]/`
@@ -166,29 +149,14 @@ Change the font family:
 }
 ```
 
-### Adding Screenshots
+### Updating Screenshots
 
-1. Create an `images` folder in the githubpage directory
-2. Add your screenshots
-3. Replace placeholder divs in `index.html`:
-
-```html
-<!-- Before -->
-<div class="screenshot-placeholder">
-    <p>📱 App Screenshot</p>
-</div>
-
-<!-- After -->
-<img src="images/dashboard.png" alt="Budgets For Plans Dashboard" />
-```
+1. Replace assets in `ghpage/images`
+2. Update the corresponding `img` tags in `ghpage/index.html` to point at the new filenames and alt text
 
 ### Updating Premium Pricing
 
-Current StoreKit pricing:
-- Insights & Goals: $4.98 one-time
-- Reporting: $4.98/month or $39.98/year
-- Advanced Tools: $4.98/month or $39.98/year
-- Lifetime All Features: $99.98 one-time
+Pricing is set in App Store Connect and varies by region. If you choose to show pricing on the website, update the values in `ghpage/index.html` to match the current StoreKit display prices.
 
 ## 📱 Responsive Design
 
@@ -217,16 +185,16 @@ The website includes:
 
 ## 📝 Content Structure
 
-### User Scenario - Sarah's Story
+### User Scenarios
 
-The scenario demonstrates:
-1. **Relatable character**: Sarah, 28-year-old graphic designer
-2. **Clear goal**: Save $3,000 for Japan vacation in 6 months
-3. **Progressive steps**: Shows app usage from setup to results
-4. **Real numbers**: Specific amounts and percentages
-5. **Emotional payoff**: Success quote at the end
+The scenarios demonstrate:
+1. **Sarah**: Annual budgeting, entries, insights, and goals
+2. **Maya**: Reporting exports, filters, and branded PDFs
+3. **Leo**: Travel with FX entries, auto-tagging, and trends
+4. **Alex**: iPad workflows, drag & drop, and multi-window
+5. **Jordan**: Sync, widgets, and secure access
 
-This structure helps potential users visualize themselves using the app.
+This structure helps potential users visualize how the app adapts to different needs.
 
 ### Feature Documentation
 
@@ -234,7 +202,7 @@ Features are organized by:
 - **Category** (Core, Premium, Security, etc.)
 - **Icon** for visual recognition
 - **Title** and description
-- **Screenshot placeholder** for visual proof
+- **Screenshot** for visual proof
 
 ## 🎯 Best Practices Implemented
 
