@@ -145,7 +145,7 @@ Change the font family:
 
 ```css
 :root {
-    --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', ...;
+    --font-primary: system-ui, -apple-system, 'Segoe UI', ...;
 }
 ```
 
