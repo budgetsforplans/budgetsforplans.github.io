@@ -128,6 +128,59 @@ const createMobileMenu = () => {
 // Initialize mobile menu
 createMobileMenu();
 
+// Keep feature accordions compact by allowing only one open at a time
+const setupFeatureAccordions = () => {
+    const featureAccordions = document.querySelectorAll('.category-collapsible');
+
+    featureAccordions.forEach((accordion) => {
+        accordion.addEventListener('toggle', () => {
+            if (!accordion.open) {
+                return;
+            }
+
+            featureAccordions.forEach((otherAccordion) => {
+                if (otherAccordion !== accordion) {
+                    otherAccordion.open = false;
+                }
+            });
+        });
+    });
+};
+
+// Show a compact download CTA on mobile after users scroll through initial content
+const setupMobileStickyCta = () => {
+    const stickyCta = document.getElementById('mobileStickyCta');
+
+    if (!stickyCta) {
+        return;
+    }
+
+    const mobileQuery = window.matchMedia('(max-width: 768px)');
+
+    const updateStickyCta = () => {
+        if (!mobileQuery.matches) {
+            stickyCta.classList.remove('visible');
+            return;
+        }
+
+        const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = scrollableHeight > 0 ? window.scrollY / scrollableHeight : 0;
+
+        stickyCta.classList.toggle('visible', progress >= 0.3);
+    };
+
+    window.addEventListener('scroll', updateStickyCta, { passive: true });
+    window.addEventListener('resize', updateStickyCta);
+
+    if (mobileQuery.addEventListener) {
+        mobileQuery.addEventListener('change', updateStickyCta);
+    } else {
+        mobileQuery.addListener(updateStickyCta);
+    }
+
+    updateStickyCta();
+};
+
 // Add hover effects to buttons
 document.querySelectorAll('.btn').forEach(button => {
     button.addEventListener('mouseenter', (e) => {
@@ -163,6 +216,8 @@ const createScrollProgress = () => {
 
 // Initialize scroll progress
 createScrollProgress();
+setupFeatureAccordions();
+setupMobileStickyCta();
 
 // Log page load
 console.log('Budgets For Plans website loaded successfully!');
