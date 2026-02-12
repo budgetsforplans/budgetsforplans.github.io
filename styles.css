@@ -475,14 +475,6 @@ h4 {
     margin-bottom: var(--spacing-sm);
 }
 
-.scenario .step-content .screenshot-frame {
-    max-width: 30%;
-}
-
-.advanced-planning .planning-content .screenshot-frame {
-    max-width: 30%;
-}
-
 .advanced-planning {
     padding: var(--spacing-xl) 0 var(--spacing-lg);
 }
@@ -1021,6 +1013,16 @@ h4 {
 /* ====================================
    Responsive Design
    ==================================== */
+
+@media (min-width: 769px) {
+    .scenario .step-content .screenshot-frame {
+        max-width: 30%;
+    }
+
+    .advanced-planning .planning-content .screenshot-frame {
+        max-width: 30%;
+    }
+}
 
 @media (max-width: 768px) {
     .hero .container {
