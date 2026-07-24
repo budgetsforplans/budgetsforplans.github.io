@@ -17,6 +17,7 @@ Most personal finance apps today fall into two camps: they either sell your data
 ### Why it's worth a look
 
 - **Privacy-First Intelligence:** All ML processing runs locally using Apple's NaturalLanguage framework. No third-party analytics, no telemetry, no data collection.
+- **On-Device Receipt Scanning:** Snap a single receipt or batch-scan a stack — on-device OCR auto-fills the amount, date, and details for review, with no cloud upload.
 - **Pro iPad Workflow:** Not just a scaled-up phone app. Multi-window plan comparisons, drag-and-drop entries between plans, a dedicated 3-column landscape layout, calendar heat maps, and full keyboard shortcut support.
 - **Apple Watch:** Plan snapshots on your wrist — check balances and spending status without reaching for your phone.
 - **iCloud Plan Sharing:** Share selected plans with trusted iCloud participants and manage access using Apple's native CloudKit sharing controls.

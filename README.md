@@ -53,10 +53,13 @@ This folder contains a complete static website for the Budgets For Plans iOS app
    - **Advanced Tools** (Subscription):
      - Card aliases
      - Recurring expenses
+     - Receipt scanning (single & batch, on-device OCR)
+     - Bulk entry parser
      - FX entry & currency breakdown
      - Auto-tagging rules + NLP suggestions
      - Trends dashboard
      - Smart alerts & digests
+     - Scenario planner
    - **Privacy & Security**:
      - Biometric protection
      - Diagnostics center
