@@ -19,6 +19,7 @@ Most personal finance apps today fall into two camps: they either sell your data
 - **Privacy-First Intelligence:** All ML processing runs locally using Apple's NaturalLanguage framework. No third-party analytics, no telemetry, no data collection.
 - **Pro iPad Workflow:** Not just a scaled-up phone app. Multi-window plan comparisons, drag-and-drop entries between plans, a dedicated 3-column landscape layout, calendar heat maps, and full keyboard shortcut support.
 - **Apple Watch:** Plan snapshots on your wrist — check balances and spending status without reaching for your phone.
+- **iCloud Plan Sharing:** Share selected plans with trusted iCloud participants and manage access using Apple's native CloudKit sharing controls.
 - **Scenario Planner:** What-if analysis with 9 modifier types. Compare a baseline vs. a modified scenario side-by-side without ever touching real data.
 - **Budget & Goal Health:** Automated health assessments (Good / Watch / At Risk) by category — surfaces the top three at-risk spending areas in every digest.
 - **Siri-Native:** Log expenses and check balances hands-free with deep Siri Shortcuts integration (biometric-protected when locked).
@@ -47,9 +48,10 @@ It's a native iOS/iPadOS budgeting app built for people who manage money across 
 ### Why it resonates in this market
 
 - **Multi-Currency & FX Tracking:** Log expenses in any currency with real FX breakdowns — useful whether you're earning in SGD and spending in INR, or managing client invoices in USD.
-- **100% On-Device:** No account sign-up, no cloud sync required. All your financial data stays on your device. Optional iCloud sync is the only exception — and that's encrypted by Apple.
+- **100% On-Device:** No account sign-up, no cloud sync required. All your financial data stays on your device. Optional iCloud sync and selected plan sharing are the only exceptions, and they use Apple's CloudKit infrastructure.
 - **Free to Start:** The core budgeting features are completely free. No paywall to get started.
 - **Apple Watch App:** Check your balance and spending status from your wrist.
+- **Shared Plans:** Invite trusted family members or collaborators to selected plans with native iCloud sharing controls.
 - **Scenario Planner:** Model what happens if income changes or a big expense hits — compare baseline vs. modified scenarios without touching real data.
 - **Privacy-First Intelligence:** On-device ML for auto-tagging, anomaly detection, spending insights, and weekly digests.
 - **Siri & Shortcuts:** Log expenses by voice — especially useful in markets where typing while commuting is common.
@@ -118,12 +120,12 @@ Cheers,
 ## App Quick Facts
 
 - **Platform:** iOS 16.0+ / iPadOS 16.0+ (Universal) + Apple Watch app
-- **Key Tech:** Core Data + CloudKit, NaturalLanguage framework, Swift Concurrency, SwiftUI (Observable Macro, iOS 17+), StoreKit 2, WidgetKit, WatchConnectivity
+- **Key Tech:** Core Data + CloudKit sharing, NaturalLanguage framework, Swift Concurrency, SwiftUI (Observable Macro, iOS 17+), StoreKit 2, WidgetKit, WatchConnectivity
 - **Pricing:**
   - Free — unlimited plans, entry logging, charts, CSV import/export, Siri
   - Insights & Goals — one-time purchase
   - Reporting — subscription (monthly or annual, 33% discount)
   - Advanced Tools — subscription (monthly or annual, 33% discount)
   - All Features Lifetime — one-time purchase, Family Sharing eligible
-- **Privacy:** No third-party analytics, no telemetry, no data collection. All ML runs on-device.
+- **Privacy:** No third-party analytics, no telemetry, no data collection. All ML runs on-device. Optional sync and plan sharing use iCloud/CloudKit.
 - **Primary Link:** `https://budgetsforplans.github.io/`

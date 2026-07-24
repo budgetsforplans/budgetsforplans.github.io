@@ -18,7 +18,7 @@ This folder contains a complete static website for the Budgets For Plans iOS app
    - Main dashboard screenshot
 
 2. **Overview**
-   - Six value propositions covering plans, insights, reporting, sync, and iPad
+   - Value propositions covering plans, insights, reporting, sync and sharing, iPad, Siri, and privacy
 
 3. **On-Device Intelligence**
    - ML features such as digest insights, anomaly detection, and NLP auto-tagging
@@ -27,7 +27,7 @@ This folder contains a complete static website for the Budgets For Plans iOS app
    - Split view layouts, multi-window, drag & drop, keyboard shortcuts, and calendar heat map
 
 5. **User Scenarios**
-   - Five real-world stories showing budgeting, reporting, travel, iPad workflows, and family planning
+   - Five real-world stories showing budgeting, reporting, travel, iPad workflows, and shared family planning
 
 6. **Complete Features List**
    - **Core Features** (Free):
@@ -61,7 +61,7 @@ This folder contains a complete static website for the Budgets For Plans iOS app
      - Biometric protection
      - Diagnostics center
    - **Sync & Platforms**:
-     - CloudKit sync
+     - CloudKit sync and plan sharing
      - Apple Watch app
      - Home screen widgets
 
@@ -78,7 +78,7 @@ This folder contains a complete static website for the Budgets For Plans iOS app
    - Feature checklist, requirements, App Store badge
 
 10. **Privacy**
-   - On-device ML with optional iCloud sync
+   - On-device ML with optional iCloud sync and plan sharing through Apple's native CloudKit controls
 
 11. **Footer**
    - Navigation and support links
@@ -192,7 +192,7 @@ The scenarios demonstrate:
 2. **Maya**: Reporting exports, filters, and branded PDFs
 3. **Leo**: Travel with FX entries, auto-tagging, and trends
 4. **Alex**: iPad workflows, drag & drop, and multi-window
-5. **Jordan**: Sync, widgets, and secure access
+5. **Jordan**: Sync, shared household plans, widgets, and secure access
 
 This structure helps potential users visualize how the app adapts to different needs.
 
