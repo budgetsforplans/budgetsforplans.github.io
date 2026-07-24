@@ -3,6 +3,8 @@
  * Handles smooth scrolling, animations, and interactive elements
  */
 
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -15,52 +17,51 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
             window.scrollTo({
                 top: targetPosition,
-                behavior: 'smooth'
+                behavior: prefersReducedMotion.matches ? 'auto' : 'smooth'
             });
         }
     });
 });
 
-// Intersection Observer for fade-in animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+if (!prefersReducedMotion.matches && 'IntersectionObserver' in window) {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+            }
+        });
+    }, observerOptions);
+
+    // Observe elements for animation.
+    document.addEventListener('DOMContentLoaded', () => {
+        const animatedElements = document.querySelectorAll(
+            '.overview-card, .feature-item, .scenario-step, .premium-tier'
+        );
+
+        animatedElements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    });
+
+    // Add fade-in animation when element is visible.
+    const style = document.createElement('style');
+    style.textContent = `
+        .fade-in {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
         }
-    });
-}, observerOptions);
+    `;
+    document.head.appendChild(style);
+}
 
-// Observe elements for animation
-document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll(
-        '.overview-card, .feature-item, .scenario-step, .premium-tier'
-    );
-
-    animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
-    });
-});
-
-// Add fade-in animation when element is visible
-const style = document.createElement('style');
-style.textContent = `
-    .fade-in {
-        opacity: 1 !important;
-        transform: translateY(0) !important;
-    }
-`;
-document.head.appendChild(style);
-
-// Navbar scroll effect
-let lastScroll = 0;
 const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
@@ -72,54 +73,56 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.style.boxShadow = 'none';
     }
-
-    lastScroll = currentScroll;
 });
 
-// Mobile menu toggle (for future implementation)
+// Mobile menu toggle
 const createMobileMenu = () => {
     const navMenu = document.querySelector('.nav-menu');
     const menuButton = document.createElement('button');
+
+    if (!navMenu) {
+        return;
+    }
+
     menuButton.className = 'mobile-menu-button';
-    menuButton.innerHTML = '☰';
-    menuButton.style.cssText = `
-        display: none;
-        background: none;
-        border: none;
-        font-size: 1.5rem;
-        cursor: pointer;
-        color: var(--text-primary);
-    `;
+    menuButton.type = 'button';
+    menuButton.textContent = '☰';
+    menuButton.setAttribute('aria-controls', navMenu.id || 'primaryNavigation');
+    menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.setAttribute('aria-label', 'Open navigation menu');
 
     // Show on mobile
     const mediaQuery = window.matchMedia('(max-width: 768px)');
-    const handleMobile = (e) => {
-        if (e.matches) {
-            menuButton.style.display = 'block';
-            navMenu.style.display = 'none';
-        } else {
-            menuButton.style.display = 'none';
-            navMenu.style.display = 'flex';
+    const setMenuOpen = (isOpen) => {
+        navMenu.classList.toggle('open', isOpen);
+        menuButton.setAttribute('aria-expanded', String(isOpen));
+        menuButton.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    };
+
+    const handleMobile = () => {
+        if (!mediaQuery.matches) {
+            setMenuOpen(false);
         }
     };
 
-    mediaQuery.addListener(handleMobile);
-    handleMobile(mediaQuery);
+    if (mediaQuery.addEventListener) {
+        mediaQuery.addEventListener('change', handleMobile);
+    } else {
+        mediaQuery.addListener(handleMobile);
+    }
+
+    handleMobile();
 
     menuButton.addEventListener('click', () => {
-        const isVisible = navMenu.style.display === 'flex';
-        navMenu.style.display = isVisible ? 'none' : 'flex';
+        setMenuOpen(!navMenu.classList.contains('open'));
+    });
 
-        if (!isVisible) {
-            navMenu.style.flexDirection = 'column';
-            navMenu.style.position = 'absolute';
-            navMenu.style.top = '100%';
-            navMenu.style.left = '0';
-            navMenu.style.right = '0';
-            navMenu.style.background = 'white';
-            navMenu.style.padding = '1rem';
-            navMenu.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
-        }
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (mediaQuery.matches) {
+                setMenuOpen(false);
+            }
+        });
     });
 
     document.querySelector('.nav-brand').parentElement.appendChild(menuButton);
@@ -181,17 +184,6 @@ const setupMobileStickyCta = () => {
     updateStickyCta();
 };
 
-// Add hover effects to buttons
-document.querySelectorAll('.btn').forEach(button => {
-    button.addEventListener('mouseenter', (e) => {
-        e.target.style.transform = 'translateY(-2px)';
-    });
-
-    button.addEventListener('mouseleave', (e) => {
-        e.target.style.transform = 'translateY(0)';
-    });
-});
-
 // Scroll progress indicator (optional)
 const createScrollProgress = () => {
     const progressBar = document.createElement('div');
@@ -200,7 +192,7 @@ const createScrollProgress = () => {
         top: 0;
         left: 0;
         height: 3px;
-        background: linear-gradient(90deg, #667eea, #764ba2);
+        background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
         width: 0%;
         z-index: 9999;
         transition: width 0.1s ease;
@@ -218,7 +210,3 @@ const createScrollProgress = () => {
 createScrollProgress();
 setupFeatureAccordions();
 setupMobileStickyCta();
-
-// Log page load
-console.log('Budgets For Plans website loaded successfully!');
-console.log('Ready to take control of your finances 💰');

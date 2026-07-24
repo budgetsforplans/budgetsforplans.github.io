@@ -3,25 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Budgets For Plans is a privacy-first personal finance planner for iPhone and iPad with on-device insights, iCloud sync, reporting, Siri shortcuts, and premium planning tools.">
+    <meta name="theme-color" content="#0EA5E9">
+    <link rel="canonical" href="https://budgetsforplans.github.io/">
+    <link rel="icon" href="images/app-icon.png">
+    <link rel="apple-touch-icon" href="images/app-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Budgets For Plans - Personal Finance Planner for iPhone and iPad">
+    <meta property="og:description" content="Plan, track, and improve your finances with on-device intelligence across iPhone and iPad while keeping your data in your Apple ecosystem.">
+    <meta property="og:url" content="https://budgetsforplans.github.io/">
+    <meta property="og:image" content="https://budgetsforplans.github.io/images/screenshot-hero-dashboard.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Budgets For Plans - Personal Finance Planner for iPhone and iPad">
+    <meta name="twitter:description" content="Privacy-first budgeting with on-device insights, iCloud sync, reporting, Siri shortcuts, and iPad workflows.">
+    <meta name="twitter:image" content="https://budgetsforplans.github.io/images/screenshot-hero-dashboard.png">
     <title>Budgets For Plans - Personal Finance Planner for iPhone and iPad</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary navigation">
         <div class="container">
             <div class="nav-brand">
                 <div class="brand-mark">
-                    <img src="images/app-icon.png" alt="Budgets For Plans App Icon">
+                    <img src="images/app-icon.png" alt="Budgets For Plans App Icon" width="1024" height="1024" decoding="async">
                     <span>Budgets For Plans</span>
                 </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#scenario">How It Works</a></li>
+            <ul class="nav-menu" id="primaryNavigation">
                 <li><a href="#privacy">Privacy</a></li>
-                <li><a href="#features">Features</a></li>
                 <li><a href="#siri">Siri</a></li>
                 <li><a href="#ipad">iPad</a></li>
+                <li><a href="#scenario">How It Works</a></li>
+                <li><a href="#features">Features</a></li>
                 <li><a href="#premium">Premium</a></li>
                 <li><a href="#download">Download</a></li>
             </ul>
@@ -41,7 +55,7 @@
             </div>
             <div class="hero-image">
                 <figure class="screenshot-frame">
-                    <img src="images/screenshot-hero-dashboard.png" alt="Dashboard showing plan metrics and charts">
+                    <img src="images/screenshot-hero-dashboard.png" alt="Dashboard showing plan metrics and charts" width="1206" height="2622" fetchpriority="high" decoding="async">
                     <figcaption>Plan dashboard with charts, metrics, and insights.</figcaption>
                 </figure>
             </div>
@@ -269,7 +283,7 @@
                         </ul>
                     </div>
                     <figure class="screenshot-frame">
-                        <img src="images/ipad-split-view-navigation.png" alt="iPad split view showing plan sidebar and detail view">
+                        <img src="images/ipad-split-view-navigation.png" alt="iPad split view showing plan sidebar and detail view" width="1668" height="2420" loading="lazy" decoding="async">
                         <figcaption>Split view navigation with persistent plan sidebar on iPad.</figcaption>
                     </figure>
                 </div>
@@ -287,7 +301,7 @@
                         </ul>
                     </div>
                     <figure class="screenshot-frame">
-                        <img src="images/ipad-side-by-side-charts.png" alt="iPad landscape showing expense and income charts side-by-side">
+                        <img src="images/ipad-side-by-side-charts.png" alt="iPad landscape showing expense and income charts side-by-side" width="1668" height="2420" loading="lazy" decoding="async">
                         <figcaption>Side-by-side charts in iPad landscape mode maximize screen real estate.</figcaption>
                     </figure>
                 </div>
@@ -305,7 +319,7 @@
                         </ul>
                     </div>
                     <figure class="screenshot-frame">
-                        <img src="images/ipad-entry-split-view.png" alt="iPad entry list with inline editing panel">
+                        <img src="images/ipad-entry-split-view.png" alt="iPad entry list with inline editing panel" width="1668" height="2420" loading="lazy" decoding="async">
                         <figcaption>Entry list split view for efficient inline editing on iPad.</figcaption>
                     </figure>
                 </div>
@@ -314,16 +328,18 @@
                     <div class="ipad-feature-content">
                         <div class="feature-badge">Calendar Visualization</div>
                         <h3>Spending Heat Map</h3>
-                        <p>See your entire month at a glance with color-coded calendar cells. Green shows income days, red shows expense days, and darker colors mean higher amounts. Tap any day to view all transactions.</p>
+                        <p>See your entire month at a glance with color-coded calendar cells. Green shows income days, red shows expense days, and darker colors mean higher amounts. Overlay events from your device calendars, and tap any day to view its transactions and events together.</p>
                         <ul class="ipad-feature-list">
                             <li><strong>Monthly Heat Map</strong> - Visual spending intensity across all days</li>
                             <li><strong>Color Coding</strong> - Green for income, red for expenses</li>
-                            <li><strong>Tap to Expand</strong> - View all entries for selected day</li>
+                            <li><strong>Calendar Overlay</strong> - See device calendar events alongside your entries</li>
+                            <li><strong>Per-Plan Calendar Filter</strong> - Choose which calendars each plan shows</li>
+                            <li><strong>Tap to Expand</strong> - View all entries and events for selected day</li>
                             <li><strong>Month Navigation</strong> - Swipe through historical months</li>
                         </ul>
                     </div>
                     <figure class="screenshot-frame">
-                        <img src="images/ipad-calendar-heatmap.png" alt="Calendar view with color-coded spending heat map">
+                        <img src="images/ipad-calendar-heatmap.png" alt="Calendar view with color-coded spending heat map" width="1668" height="2420" loading="lazy" decoding="async">
                         <figcaption>Calendar heat map shows spending patterns at a glance.</figcaption>
                     </figure>
                 </div>
@@ -341,7 +357,7 @@
                         </ul>
                     </div>
                     <figure class="screenshot-frame">
-                        <img src="images/ipad-drag-drop-entries.png" alt="Dragging entry to different plan in sidebar">
+                        <img src="images/ipad-drag-drop-entries.png" alt="Dragging entry to different plan in sidebar" width="1668" height="2420" loading="lazy" decoding="async">
                         <figcaption>Drag entries between plans with visual drop targeting.</figcaption>
                     </figure>
                 </div>
@@ -359,7 +375,7 @@
                         </ul>
                     </div>
                     <figure class="screenshot-frame">
-                        <img src="images/ipad-multi-window.png" alt="Two plan windows open side-by-side on iPad">
+                        <img src="images/ipad-multi-window.png" alt="Two plan windows open side-by-side on iPad" width="1668" height="2420" loading="lazy" decoding="async">
                         <figcaption>Multi-window support for comparing plans side-by-side.</figcaption>
                     </figure>
                 </div>
@@ -377,7 +393,7 @@
                         </ul>
                     </div>
                     <figure class="screenshot-frame">
-                        <img src="images/ipad-keyboard-shortcuts.png" alt="Keyboard shortcuts overlay on iPad">
+                        <img src="images/ipad-keyboard-shortcuts.png" alt="Keyboard shortcuts overlay on iPad" width="1668" height="2420" loading="lazy" decoding="async">
                         <figcaption>Keyboard shortcuts and trackpad support for power users.</figcaption>
                     </figure>
                 </div>
@@ -395,7 +411,7 @@
                         </ul>
                     </div>
                     <figure class="screenshot-frame">
-                        <img src="images/ipad-split-settings-help.png" alt="Settings and Help with sidebar navigation">
+                        <img src="images/ipad-split-settings-help.png" alt="Settings and Help with sidebar navigation" width="1668" height="2420" loading="lazy" decoding="async">
                         <figcaption>Split views for Settings and Help make information easy to find.</figcaption>
                     </figure>
                 </div>
@@ -451,7 +467,7 @@
                                 </ul>
                             </div>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-sarah-plan-setup.png" alt="Plan setup screen with currency and billing day">
+                                <img src="images/scenario-sarah-plan-setup.png" alt="Plan setup screen with currency and billing day" width="1206" height="2622" loading="lazy" decoding="async">
                                 <figcaption>Plan setup with currency and billing cadence.</figcaption>
                             </figure>
                         </div>
@@ -469,7 +485,7 @@
                                 </ul>
                             </div>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-sarah-entries-tags.png" alt="Entry list showing income and expense tags">
+                                <img src="images/scenario-sarah-entries-tags.png" alt="Entry list showing income and expense tags" width="1206" height="2622" loading="lazy" decoding="async">
                                 <figcaption>Entry list with tags and filters.</figcaption>
                             </figure>
                         </div>
@@ -489,7 +505,7 @@
                                 </ul>
                             </div>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-sarah-insights-goals.png" alt="Insights feed and goal progress cards">
+                                <img src="images/scenario-sarah-insights-goals.png" alt="Insights feed and goal progress cards" width="1206" height="2622" loading="lazy" decoding="async">
                                 <figcaption>ML-powered insights feed with goal progress.</figcaption>
                             </figure>
                         </div>
@@ -501,7 +517,7 @@
                             <h3>Monitor charts and metrics</h3>
                             <p>The triple chart carousel and metrics grid show daily position, month-to-date, and projected totals.</p>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-sarah-charts-metrics.png" alt="Charts carousel with metrics grid">
+                                <img src="images/scenario-sarah-charts-metrics.png" alt="Charts carousel with metrics grid" width="1206" height="2622" loading="lazy" decoding="async">
                                 <figcaption>Charts and metrics at a glance.</figcaption>
                             </figure>
                         </div>
@@ -522,7 +538,7 @@
                             <h3>Review balance sheet summaries</h3>
                             <p>Reporting unlocks balance sheet views that summarize income, expenses, and net position by date range.</p>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-maya-balance-sheet.png" alt="Balance sheet summary view">
+                                <img src="images/scenario-maya-balance-sheet.png" alt="Balance sheet summary view" width="1206" height="2622" loading="lazy" decoding="async">
                                 <figcaption>Balance sheet summary with trends.</figcaption>
                             </figure>
                         </div>
@@ -534,7 +550,7 @@
                             <h3>Export PDFs and Excel files</h3>
                             <p>She filters by tags and date range to keep reports clean, then exports in PDF or Excel.</p>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-maya-reporting-export.png" alt="Reporting export filters for PDF and Excel">
+                                <img src="images/scenario-maya-reporting-export.png" alt="Reporting export filters for PDF and Excel" width="1206" height="2622" loading="lazy" decoding="async">
                                 <figcaption>PDF and Excel export filters.</figcaption>
                             </figure>
                         </div>
@@ -554,7 +570,7 @@
                                 </ul>
                             </div>
                             <figure class="screenshot-frame">
-                                <img src="images/feature-alerts-digests.png" alt="Digest settings and ML-enhanced summary">
+                                <img src="images/feature-alerts-digests.png" alt="Digest settings and ML-enhanced summary" width="1206" height="2622" loading="lazy" decoding="async">
                                 <figcaption>ML-enhanced digest with insights and recommendations.</figcaption>
                             </figure>
                         </div>
@@ -566,7 +582,7 @@
                             <h3>Add custom branding</h3>
                             <p>Custom headers and footers keep the PDF aligned with her studio brand before she shares it.</p>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-maya-branded-pdf.png" alt="PDF branding with custom header and footer">
+                                <img src="images/scenario-maya-branded-pdf.png" alt="PDF branding with custom header and footer" width="1206" height="2622" loading="lazy" decoding="async">
                                 <figcaption>Branded PDF exports.</figcaption>
                             </figure>
                         </div>
@@ -587,7 +603,7 @@
                             <h3>Track expenses by card</h3>
                             <p>Card aliases keep rewards straight without storing sensitive card details, with a due-by-card summary.</p>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-leo-card-aliases.png" alt="Card alias list with due-by-card summary">
+                                <img src="images/scenario-leo-card-aliases.png" alt="Card alias list with due-by-card summary" width="1206" height="2622" loading="lazy" decoding="async">
                                 <figcaption>Card aliases and due-by-card totals.</figcaption>
                             </figure>
                         </div>
@@ -599,7 +615,7 @@
                             <h3>Log FX entries and currency breakdowns</h3>
                             <p>He logs travel expenses in local currency and sees automatic conversions plus currency totals.</p>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-leo-fx-entry.png" alt="FX entry with currency breakdown chart">
+                                <img src="images/scenario-leo-fx-entry.png" alt="FX entry with currency breakdown chart" width="1206" height="2622" loading="lazy" decoding="async">
                                 <figcaption>FX entry with currency breakdowns.</figcaption>
                             </figure>
                         </div>
@@ -619,7 +635,7 @@
                                 </ul>
                             </div>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-leo-trends-digests.png" alt="Trends dashboard and smart digest notifications">
+                                <img src="images/scenario-leo-trends-digests.png" alt="Trends dashboard and smart digest notifications" width="1206" height="2622" loading="lazy" decoding="async">
                                 <figcaption>NLP auto-tagging, trends, and ML-powered digest summaries.</figcaption>
                             </figure>
                         </div>
@@ -648,7 +664,7 @@
                                 </ul>
                             </div>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-alex-ipad-workspace.png" alt="iPad Pro showing 3-column layout">
+                                <img src="images/scenario-alex-ipad-workspace.png" alt="iPad Pro showing 3-column layout" width="1668" height="2420" loading="lazy" decoding="async">
                                 <figcaption>iPad workspace with persistent sidebar and multi-column layout.</figcaption>
                             </figure>
                         </div>
@@ -668,7 +684,7 @@
                                 </ul>
                             </div>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-alex-drag-drop.png" alt="Dragging entry between plans">
+                                <img src="images/scenario-alex-drag-drop.png" alt="Dragging entry between plans" width="1668" height="2420" loading="lazy" decoding="async">
                                 <figcaption>Drag and drop entries between client plans effortlessly.</figcaption>
                             </figure>
                         </div>
@@ -688,7 +704,7 @@
                                 </ul>
                             </div>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-alex-multi-window.png" alt="Two plan windows side-by-side">
+                                <img src="images/scenario-alex-multi-window.png" alt="Two plan windows side-by-side" width="1668" height="2420" loading="lazy" decoding="async">
                                 <figcaption>Multi-window mode for comparing client budgets simultaneously.</figcaption>
                             </figure>
                         </div>
@@ -698,17 +714,18 @@
                         <div class="step-number">4</div>
                         <div class="step-content">
                             <h3>Review spending patterns in calendar view</h3>
-                            <p>The calendar heat map shows the entire month with color-coded cells—green for income days, red for expenses. Darker colors indicate higher amounts. Alex can quickly spot irregular spending patterns and tap any day to see all transactions.</p>
+                            <p>The calendar heat map shows the entire month with color-coded cells—green for income days, red for expenses. Darker colors indicate higher amounts. Alex can overlay events from a chosen device calendar, quickly spot irregular spending patterns, and tap any day to see all transactions and events.</p>
                             <div class="step-details">
                                 <ul>
                                     <li>Monthly heat map with spending intensity</li>
-                                    <li>Tap any day to expand entry list</li>
+                                    <li>Overlay events from your device calendars</li>
+                                    <li>Filter each plan to the calendars that matter</li>
+                                    <li>Tap any day to expand entries and events</li>
                                     <li>Navigate months with swipe gestures</li>
-                                    <li>Perfect for monthly client reviews</li>
                                 </ul>
                             </div>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-alex-calendar.png" alt="Calendar heat map view">
+                                <img src="images/scenario-alex-calendar.png" alt="Calendar heat map view" width="1668" height="2420" loading="lazy" decoding="async">
                                 <figcaption>Calendar heat map reveals spending patterns at a glance.</figcaption>
                             </figure>
                         </div>
@@ -729,7 +746,7 @@
                             <h3>Sync and share household plans</h3>
                             <p>CloudKit keeps plans aligned across iPhone and iPad. When a household budget needs shared visibility, Jordan can invite trusted iCloud participants and manage access from the native sharing controls.</p>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-jordan-sync-widgets.png" alt="Widget and Apple Watch plan snapshots">
+                                <img src="images/scenario-jordan-sync-widgets.png" alt="Widget and Apple Watch plan snapshots" width="1206" height="2622" loading="lazy" decoding="async">
                                 <figcaption>Widgets and Apple Watch snapshots.</figcaption>
                             </figure>
                         </div>
@@ -741,7 +758,7 @@
                             <h3>Import and archive plans</h3>
                             <p>CSV imports bring in historical data, and archived plans keep the active list focused.</p>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-jordan-import-archive.png" alt="CSV import and archive plan view">
+                                <img src="images/scenario-jordan-import-archive.png" alt="CSV import and archive plan view" width="1206" height="2622" loading="lazy" decoding="async">
                                 <figcaption>CSV import and archived plans.</figcaption>
                             </figure>
                         </div>
@@ -753,7 +770,7 @@
                             <h3>Keep data secure</h3>
                             <p>Biometric lock and the diagnostics center provide secure access and visibility into sync health.</p>
                             <figure class="screenshot-frame">
-                                <img src="images/scenario-jordan-security-diagnostics.png" alt="Biometric lock settings and diagnostics screen">
+                                <img src="images/scenario-jordan-security-diagnostics.png" alt="Biometric lock settings and diagnostics screen" width="1206" height="2622" loading="lazy" decoding="async">
                                 <figcaption>Security and diagnostics.</figcaption>
                             </figure>
                         </div>
@@ -889,7 +906,7 @@
                     </div>
 
                     <figure class="screenshot-frame">
-                        <img src="images/feature-scenario-planner.png" alt="Scenario comparison showing baseline vs modified metrics">
+                        <img src="images/feature-scenario-planner.png" alt="Scenario comparison showing baseline vs modified metrics" width="1206" height="2622" loading="lazy" decoding="async">
                         <figcaption>Scenario Planner showing side-by-side comparison of baseline vs modified plan.</figcaption>
                     </figure>
                     </div>
@@ -1025,7 +1042,7 @@
                     </div>
 
                     <figure class="screenshot-frame">
-                        <img src="images/feature-digest-health.png" alt="Digest health cards showing budget and goal assessments">
+                        <img src="images/feature-digest-health.png" alt="Digest health cards showing budget and goal assessments" width="1206" height="2622" loading="lazy" decoding="async">
                         <figcaption>Budget and goal health cards in Smart Digest with status indicators and recommendations.</figcaption>
                     </figure>
                     </div>
@@ -1048,7 +1065,7 @@
                         <h4>Plans & Budgets</h4>
                         <p>Create unlimited plans with a single currency, billing cadence, and export preferences.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-plans-budgets.png" alt="Plans list">
+                            <img src="images/feature-plans-budgets.png" alt="Plans list" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1057,7 +1074,7 @@
                         <h4>Entries & Tags</h4>
                         <p>Log income and expenses with tags, notes, and dates for easy filtering.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-entries-tags.png" alt="Entry form">
+                            <img src="images/feature-entries-tags.png" alt="Entry form" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1066,7 +1083,7 @@
                         <h4>Charts & Metrics</h4>
                         <p>Swipe through expenses, income, and balance charts with a live metrics grid.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-charts-metrics.png" alt="Charts carousel">
+                            <img src="images/feature-charts-metrics.png" alt="Charts carousel" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1075,7 +1092,7 @@
                         <h4>Search & Filters</h4>
                         <p>Find entries by name, tag, or amount with fast search and sorting.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-search-filter.png" alt="Search and filters">
+                            <img src="images/feature-search-filter.png" alt="Search and filters" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1084,7 +1101,7 @@
                         <h4>CSV Import</h4>
                         <p>Import entries when you create plans or pull multiple plans from a folder.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-csv-import.png" alt="CSV import flow">
+                            <img src="images/feature-csv-import.png" alt="CSV import flow" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1093,7 +1110,7 @@
                         <h4>CSV Export</h4>
                         <p>Export plan data to CSV for quick sharing or spreadsheet work.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-csv-export.png" alt="CSV export settings">
+                            <img src="images/feature-csv-export.png" alt="CSV export settings" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1102,7 +1119,7 @@
                         <h4>Multi-Currency Plans</h4>
                         <p>Choose the working currency per plan for global budgets.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-multi-currency.png" alt="Currency picker">
+                            <img src="images/feature-multi-currency.png" alt="Currency picker" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1111,7 +1128,7 @@
                         <h4>Billing Day Tracking</h4>
                         <p>Set card billing dates to track upcoming cycles and coverage.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-billing-day.png" alt="Billing day selection">
+                            <img src="images/feature-billing-day.png" alt="Billing day selection" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1120,7 +1137,7 @@
                         <h4>Archive Plans</h4>
                         <p>Archive finished plans and restore them anytime.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-archive-plans.png" alt="Archived plans">
+                            <img src="images/feature-archive-plans.png" alt="Archived plans" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1181,7 +1198,7 @@
                         <h4>Smart Cashflow & Bill Guard</h4>
                         <p>Get alerts when you are at risk of running short before paychecks or bills.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-cashflow-guard.png" alt="Cashflow guard alert">
+                            <img src="images/feature-cashflow-guard.png" alt="Cashflow guard alert" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1190,7 +1207,7 @@
                         <h4>Goals & Milestones</h4>
                         <p>Track targets, milestone progress, and budget thresholds by category.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-goals-milestones.png" alt="Goal progress card">
+                            <img src="images/feature-goals-milestones.png" alt="Goal progress card" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1199,7 +1216,7 @@
                         <h4>Insights Feed</h4>
                         <p>See changes in spending, income, and savings with actionable insights.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-insights-feed.png" alt="Insights feed">
+                            <img src="images/feature-insights-feed.png" alt="Insights feed" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1208,7 +1225,7 @@
                         <h4>Advanced Analytics Engine</h4>
                         <p>20+ insight types including spending pace, income volatility, category spikes, bill coverage ratios, and risk assessment.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-insights-feed.png" alt="Advanced analytics">
+                            <img src="images/feature-insights-feed.png" alt="Advanced analytics" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1217,7 +1234,7 @@
                         <h4>Anomaly Detection</h4>
                         <p>ML-powered alerts when transactions exceed 3x your median spending, helping catch errors or unexpected charges.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-cashflow-guard.png" alt="Anomaly detection alert">
+                            <img src="images/feature-cashflow-guard.png" alt="Anomaly detection alert" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
@@ -1231,7 +1248,7 @@
                         <h4>Balance Sheet Reports</h4>
                         <p>Summaries for income, expenses, and net position by date range.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-balance-sheet.png" alt="Balance sheet report">
+                            <img src="images/feature-balance-sheet.png" alt="Balance sheet report" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1240,7 +1257,7 @@
                         <h4>PDF & Excel Exports</h4>
                         <p>Export professional reports with detailed entries and charts.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-pdf-excel.png" alt="PDF and Excel export options">
+                            <img src="images/feature-pdf-excel.png" alt="PDF and Excel export options" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1249,7 +1266,7 @@
                         <h4>Custom Branding</h4>
                         <p>Add header and footer images for branded reports.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-reporting-branding.png" alt="Custom branding settings">
+                            <img src="images/feature-reporting-branding.png" alt="Custom branding settings" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1258,7 +1275,7 @@
                         <h4>Export Filters</h4>
                         <p>Filter by date range or tag to export only what you need.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-export-filters.png" alt="Export filter screen">
+                            <img src="images/feature-export-filters.png" alt="Export filter screen" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
@@ -1272,7 +1289,7 @@
                         <h4>Card Aliases</h4>
                         <p>Track spend by card without storing sensitive card details.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-card-aliases.png" alt="Card alias list">
+                            <img src="images/feature-card-aliases.png" alt="Card alias list" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1281,7 +1298,7 @@
                         <h4>Recurring Expenses</h4>
                         <p>Create repeating bills with edit-all-future control.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-recurring-expenses.png" alt="Recurring expense editor">
+                            <img src="images/feature-recurring-expenses.png" alt="Recurring expense editor" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1302,7 +1319,7 @@
                         <h4>FX Entry & Currency Breakdown</h4>
                         <p>Log in another currency and view totals by currency.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-fx-entry.png" alt="FX entry and currency breakdown">
+                            <img src="images/feature-fx-entry.png" alt="FX entry and currency breakdown" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1311,7 +1328,7 @@
                         <h4>NLP Auto-Tagging</h4>
                         <p>Machine learning-powered categorization using sentence embeddings and semantic similarity (iOS 17+). Supports exact match, contains, starts/ends with, and regex patterns—with confidence scoring and amount-based filtering.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-auto-tagging.png" alt="NLP auto-tagging suggestions">
+                            <img src="images/feature-auto-tagging.png" alt="NLP auto-tagging suggestions" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1320,7 +1337,7 @@
                         <h4>Trends Dashboard</h4>
                         <p>Track recent months with sparklines for income, net, and savings rate across 3/6/12-month periods.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-trends-dashboard.png" alt="Trends dashboard">
+                            <img src="images/feature-trends-dashboard.png" alt="Trends dashboard" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1329,7 +1346,7 @@
                         <h4>Alerts & ML-Enhanced Digests</h4>
                         <p>Comprehensive notification system for budgets, card bills, recurring payments, and goal milestones. Weekly/monthly digests feature ML-generated headlines, sentiment analysis, anomaly detection, and confidence-scored recommendations—all processed on-device.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-alerts-digests.png" alt="Alert settings and ML-enhanced digest">
+                            <img src="images/feature-alerts-digests.png" alt="Alert settings and ML-enhanced digest" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
@@ -1343,7 +1360,7 @@
                         <h4>Biometric Protection</h4>
                         <p>Enable Face ID or Touch ID for secure app access.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-biometric-lock.png" alt="Biometric lock settings">
+                            <img src="images/feature-biometric-lock.png" alt="Biometric lock settings" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1352,7 +1369,7 @@
                         <h4>Diagnostics Center</h4>
                         <p>Review sync warnings and data validation messages in Settings.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-diagnostics-center.png" alt="Diagnostics center">
+                            <img src="images/feature-diagnostics-center.png" alt="Diagnostics center" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
@@ -1366,7 +1383,7 @@
                         <h4>CloudKit Sync and Plan Sharing</h4>
                         <p>Sync budgets across iPhone and iPad automatically, then share selected plans with trusted iCloud participants when collaboration is needed.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-cloudkit-sync.png" alt="CloudKit sync status">
+                            <img src="images/feature-cloudkit-sync.png" alt="CloudKit sync status" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1375,7 +1392,7 @@
                         <h4>Apple Watch App</h4>
                         <p>Check plan snapshots on your wrist.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-apple-watch.png" alt="Apple Watch app">
+                            <img src="images/feature-apple-watch.png" alt="Apple Watch app" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1384,7 +1401,7 @@
                         <h4>Home Screen Widgets</h4>
                         <p>See current position without opening the app.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-widgets.png" alt="Widget gallery">
+                            <img src="images/feature-widgets.png" alt="Widget gallery" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
@@ -1458,7 +1475,7 @@
                     </div>
 
                     <figure class="screenshot-frame">
-                        <img src="images/premium-insights-goals.png" alt="Insights feed and goal progress">
+                        <img src="images/premium-insights-goals.png" alt="Insights feed and goal progress" width="1206" height="2622" loading="lazy" decoding="async">
                         <figcaption>Insights feed with goals and cash-flow alerts.</figcaption>
                     </figure>
 
@@ -1500,7 +1517,7 @@
                     </div>
 
                     <figure class="screenshot-frame">
-                        <img src="images/premium-reporting.png" alt="Reporting exports with filters and branding">
+                        <img src="images/premium-reporting.png" alt="Reporting exports with filters and branding" width="1206" height="2622" loading="lazy" decoding="async">
                         <figcaption>Export PDF and Excel reports with filters.</figcaption>
                     </figure>
 
@@ -1567,7 +1584,7 @@
                     </div>
 
                     <figure class="screenshot-frame">
-                        <img src="images/premium-advanced-tools.png" alt="Advanced tools overview with trends and alerts">
+                        <img src="images/premium-advanced-tools.png" alt="Advanced tools overview with trends and alerts" width="1206" height="2622" loading="lazy" decoding="async">
                         <figcaption>Advanced tools for trends, alerts, and FX.</figcaption>
                     </figure>
 
@@ -1677,8 +1694,8 @@
 
                 <div class="app-store-button">
                     <a class="app-store-link" href="https://apps.apple.com/us/app/budgets-for-plans/id1541339935" aria-label="Download on the App Store">
-                        <img class="app-icon" src="images/app-icon.png" alt="Budgets For Plans App Icon">
-                        <img class="app-store-badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=300x100" alt="Download on the App Store">
+                        <img class="app-icon" src="images/app-icon.png" alt="Budgets For Plans App Icon" width="1024" height="1024" loading="lazy" decoding="async">
+                        <img class="app-store-badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=300x100" alt="Download on the App Store" width="300" height="100" loading="lazy" decoding="async">
                     </a>
                 </div>
             </div>
@@ -1700,7 +1717,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="brand-mark">
-                        <img src="images/app-icon.png" alt="Budgets For Plans App Icon">
+                        <img src="images/app-icon.png" alt="Budgets For Plans App Icon" width="1024" height="1024" decoding="async">
                         <span>Budgets For Plans</span>
                     </div>
                     <p>Take control of your finances with intelligent budgeting.</p>
@@ -1720,7 +1737,7 @@
                         <ul>
                             <li><a href="#scenario">How It Works</a></li>
                             <li><a href="mailto:anarahari@gmail.com">Support</a></li>
-                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#privacy">Privacy</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1731,6 +1748,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
