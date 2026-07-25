@@ -24,7 +24,7 @@ This folder contains a complete static website for the Budgets For Plans iOS app
    - ML features such as digest insights, anomaly detection, and NLP auto-tagging
 
 4. **iPad Features**
-   - Split view layouts, multi-window, drag & drop, keyboard shortcuts, and calendar heat map
+   - Adaptive sidebar layouts, equal-width landscape detail columns, multi-window, drag & drop, keyboard shortcuts, and calendar heat map
 
 5. **User Scenarios**
    - Five real-world stories showing budgeting, reporting, travel, iPad workflows, and shared family planning
@@ -66,7 +66,7 @@ This folder contains a complete static website for the Budgets For Plans iOS app
    - **Sync & Platforms**:
      - CloudKit sync and plan sharing
      - Apple Watch app
-     - Home screen widgets
+     - Home screen widgets for balances, budget progress, transactions, trends, categories, and a large plan calendar
 
 7. **Premium Features**
    - Insights & Goals (one-time)
