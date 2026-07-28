@@ -29,16 +29,25 @@ This folder contains a complete static website for the Budgets For Plans iOS app
 5. **User Scenarios**
    - Five real-world stories showing budgeting, reporting, travel, iPad workflows, and shared family planning
 
-6. **Complete Features List**
+6. **Advanced Planning** (`#planning`)
+   - Scenario Planner and Budget & Goal Health, each with an expandable walkthrough
+
+7. **Complete Features List**
    - **Core Features** (Free):
      - Plans & Budgets
+     - Full plan report — every section, any period, free to read
+     - Report scope controls (all time / 3 / 6 / 12 months / custom, category filter, household combine)
      - Entries & Tags
+     - Quick Add one-line entry parsing
+     - Category suggestion chips
      - Charts & Metrics
      - Search & Filters
      - CSV Import/Export (including bulk import)
+     - Backup & restore (whole-plan file, with a review step before import)
      - Multi-currency plan settings
      - Billing day tracking
      - Archive plans
+     - Siri & Shortcuts (five voice actions)
    - **On-Device Intelligence**:
      - Digest insights, NLP auto-tagging, and anomaly detection (tier-dependent)
    - **Insights & Goals** (One-time purchase):
@@ -46,10 +55,11 @@ This folder contains a complete static website for the Budgets For Plans iOS app
      - Insights Feed
      - Goals & Milestones
      - Budget thresholds and monthly limits
-   - **Reporting** (Subscription):
-     - Balance sheet reports
-     - PDF & Excel exports
+   - **Report Exports** (Subscription):
+     - Exports the period already on screen — the document cannot disagree with the report
+     - PDF reports, balance sheet reports, Excel workbooks, and CSV
      - Filters and custom branding
+     - Note: reading the report itself is free; this tier is only the export
    - **Advanced Tools** (Subscription):
      - Card aliases
      - Recurring expenses
@@ -58,8 +68,10 @@ This folder contains a complete static website for the Budgets For Plans iOS app
      - FX entry & currency breakdown
      - Auto-tagging rules + NLP suggestions
      - Trends dashboard
-     - Smart alerts & digests
+     - Smart alerts & digests (inbox with per-digest and bulk delete)
+     - Daily logging reminder
      - Scenario planner
+     - Budget & goal health summaries
    - **Privacy & Security**:
      - Biometric protection
      - Diagnostics center
@@ -68,22 +80,22 @@ This folder contains a complete static website for the Budgets For Plans iOS app
      - Apple Watch app
      - Home screen widgets for balances, budget progress, transactions, trends, categories, and a large plan calendar
 
-7. **Premium Features**
+8. **Premium Features**
    - Insights & Goals (one-time)
    - Reporting (subscription)
    - Advanced Tools (subscription)
    - All Features Lifetime (one-time, Family Sharing eligible)
 
-8. **Technical Highlights**
+9. **Technical Highlights**
    - NaturalLanguage, Core Data + CloudKit, Swift Concurrency, SwiftUI + Observation, WidgetKit, StoreKit 2
 
-9. **Download Section**
+10. **Download Section**
    - Feature checklist, requirements, App Store badge
 
-10. **Privacy**
+11. **Privacy**
    - On-device ML with optional iCloud sync and plan sharing through Apple's native CloudKit controls
 
-11. **Footer**
+12. **Footer**
    - Navigation and support links
 
 ## 📸 Screenshots and Images
@@ -134,11 +146,11 @@ Edit the CSS variables in `styles.css`:
 
 ```css
 :root {
-    --primary-color: #007AFF;     /* Main brand color */
-    --secondary-color: #5856D6;   /* Accent color */
-    --success-color: #34C759;     /* Success states */
-    --warning-color: #FF9500;     /* Warnings */
-    --error-color: #FF3B30;       /* Errors */
+    --primary-color: #0EA5E9;     /* Main brand color */
+    --secondary-color: #14B8A6;   /* Accent color */
+    --success-color: #22C55E;     /* Success states */
+    --warning-color: #F97316;     /* Warnings */
+    --error-color: #EF4444;       /* Errors */
 }
 ```
 

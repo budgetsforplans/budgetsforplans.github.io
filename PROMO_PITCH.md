@@ -16,7 +16,9 @@ Most personal finance apps today fall into two camps: they either sell your data
 
 ### Why it's worth a look
 
+- **The Full Report Is Free:** Read a complete financial report for any plan — balance movement, category breakdowns, budget vs actual, 50/30/20 allocation, recurring vs one-time, top drivers, goal progress — over any period, without paying. The subscription buys only the export (PDF, workbook, CSV). Most apps in this category put the analysis itself behind the paywall.
 - **Privacy-First Intelligence:** All ML processing runs locally using Apple's NaturalLanguage framework. No third-party analytics, no telemetry, no data collection.
+- **One-Line Entry:** Type "Lunch 12 Food" and the name, amount, and category fill themselves in. It fills the form rather than saving, so you always review before committing.
 - **On-Device Receipt Scanning:** Snap a single receipt or batch-scan a stack — on-device OCR auto-fills the amount, date, and details for review, with no cloud upload.
 - **Pro iPad Workflow:** Not just a scaled-up phone app. Multi-window plan comparisons, drag-and-drop entries between plans, adaptive sidebars, equal-width landscape detail columns, calendar heat maps, and full keyboard shortcut support.
 - **Apple Watch:** Plan snapshots on your wrist — check balances and spending status without reaching for your phone.
@@ -24,7 +26,7 @@ Most personal finance apps today fall into two camps: they either sell your data
 - **Scenario Planner:** What-if analysis with 9 modifier types. Compare a baseline vs. a modified scenario side-by-side without ever touching real data.
 - **Budget & Goal Health:** Automated health assessments (Good / Watch / At Risk) by category — surfaces the top three at-risk spending areas in every digest.
 - **Siri-Native:** Log expenses and check balances hands-free with deep Siri Shortcuts integration (biometric-protected when locked).
-- **Multi-Currency & Reporting:** FX entries with currency breakdown charts, plus branded PDF/Excel exports for power users and small business owners.
+- **Multi-Currency & Reporting:** FX entries with currency breakdown charts, plus branded PDF, Excel, and CSV exports for power users and small business owners — each covering exactly the period on screen, so the document can never disagree with the report.
 - **Lifetime Purchase (Family Sharing):** One-time unlock covers all premium tiers, and it's Family Sharing eligible.
 
 I'd love for you to check it out. Happy to provide a Promo Code for the Lifetime tier if you'd like to explore everything.
@@ -50,7 +52,7 @@ It's a native iOS/iPadOS budgeting app built for people who manage money across 
 
 - **Multi-Currency & FX Tracking:** Log expenses in any currency with real FX breakdowns — useful whether you're earning in SGD and spending in INR, or managing client invoices in USD.
 - **100% On-Device:** No account sign-up, no cloud sync required. All your financial data stays on your device. Optional iCloud sync and selected plan sharing are the only exceptions, and they use Apple's CloudKit infrastructure.
-- **Free to Start:** The core budgeting features are completely free. No paywall to get started.
+- **Free to Start:** The core budgeting features are completely free — including the full financial report for every plan, over any period. No paywall to get started, and no paywall on the analysis itself.
 - **Apple Watch App:** Check your balance and spending status from your wrist.
 - **Shared Plans:** Invite trusted family members or collaborators to selected plans with native iCloud sharing controls.
 - **Scenario Planner:** Model what happens if income changes or a big expense hits — compare baseline vs. modified scenarios without touching real data.
@@ -123,9 +125,9 @@ Cheers,
 - **Platform:** iOS 16.0+ / iPadOS 16.0+ (Universal) + Apple Watch app
 - **Key Tech:** Core Data + CloudKit sharing, NaturalLanguage framework, Swift Concurrency, SwiftUI (Observable Macro, iOS 17+), StoreKit 2, WidgetKit, WatchConnectivity
 - **Pricing:**
-  - Free — unlimited plans, entry logging, charts, CSV import/export, Siri
+  - Free — unlimited plans, entry logging, charts, the full plan report, CSV import/export, backup & restore, Siri
   - Insights & Goals — one-time purchase
-  - Reporting — subscription (monthly or annual, 33% discount)
+  - Reporting — subscription (monthly or annual, 33% discount); exports only, reading the report is free
   - Advanced Tools — subscription (monthly or annual, 33% discount)
   - All Features Lifetime — one-time purchase, Family Sharing eligible
 - **Privacy:** No third-party analytics, no telemetry, no data collection. All ML runs on-device. Optional sync and plan sharing use iCloud/CloudKit.

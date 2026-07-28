@@ -111,8 +111,8 @@
                 </div>
                 <div class="overview-card">
                     <div class="icon">📄</div>
-                    <h3>Reporting Ready</h3>
-                    <p>Create balance sheets, polished PDFs, and Excel exports with filters and branding for professional sharing.</p>
+                    <h3>The Full Report, Free</h3>
+                    <p>Every plan has a complete report you can read without paying — balances, categories, budget vs actual, allocation, top drivers, and goals, over any period. Upgrade only when you want it as a PDF, workbook, or CSV.</p>
                 </div>
                 <div class="overview-card">
                     <div class="icon">☁️</div>
@@ -184,12 +184,13 @@
                 <div class="ml-card">
                     <div class="ml-icon">🔮</div>
                     <h3>Smart Digests</h3>
-                    <p>Weekly or monthly digests with ML-enhanced summaries, automatic headline generation, and trend comparisons based on historical patterns (30-day minimum).</p>
+                    <p>Weekly or monthly digests with ML-enhanced summaries, automatic headline generation, and trend comparisons based on historical patterns (30-day minimum). Every plan's digests land in one inbox, titled by the period they cover.</p>
                     <ul class="ml-features-list">
                         <li>Sentiment-based headlines</li>
-                        <li>Category-level insights</li>
+                        <li>Category-level insights (spending only — salary never tops your spend)</li>
                         <li>Historical trend analysis</li>
                         <li>Actionable recommendations</li>
+                        <li>One inbox across plans, with per-digest and bulk delete</li>
                     </ul>
                 </div>
             </div>
@@ -205,7 +206,7 @@
                 <div class="overview-card">
                     <div class="icon">💸</div>
                     <h3>Log Expenses by Voice</h3>
-                    <p>"Log expense in Budgets For Plans" — Siri asks for amount, name, and category. If you have one plan, it's selected automatically.</p>
+                    <p>"Log expense in Budgets For Plans" — Siri asks for amount, name, and category, and can put the purchase on your credit card so voice-logged spending still counts toward your card bill.</p>
                     <p><em>Siri: "Logged $45.00 for Groceries."</em></p>
                 </div>
                 <div class="overview-card">
@@ -243,7 +244,7 @@
                 <div class="ipad-summary-grid">
                     <div class="ipad-summary-card">
                         <h4>🔧 Customize Actions</h4>
-                        <p>Open the Shortcuts app and search for "Budgets For Plans" to see all five actions. Pre-fill amounts, categories, or plans for one-tap shortcuts.</p>
+                        <p>Open the Shortcuts app and search for "Budgets For Plans" to see all five actions. Every option — plan, category, date — is visible up front, so you can pre-fill them for one-tap shortcuts. Category suggests the categories you already use, and plans are listed with their currency.</p>
                     </div>
                     <div class="ipad-summary-card">
                         <h4>📱 Home Screen</h4>
@@ -784,7 +785,7 @@
     </section>
 
     <!-- Advanced Planning Tools Section -->
-    <section class="advanced-planning">
+    <section id="planning" class="advanced-planning">
         <div class="container">
             <h2>🎯 Advanced Planning Tools</h2>
             <p class="section-subtitle">Once your core workflow is running, these tools help you test decisions and monitor budget health proactively.</p>
@@ -1072,11 +1073,47 @@
                     </div>
 
                     <div class="feature-item">
+                        <div class="feature-icon">📈</div>
+                        <h4>Full Plan Report</h4>
+                        <p>Read a complete report for any plan — free, no upgrade. Pick all time, the last 3, 6, or 12 months, or a custom range; narrow it to specific categories; or combine plans sharing a currency into one household report.</p>
+                        <figure class="screenshot-frame small">
+                            <img src="images/feature-plan-report.png" alt="Plan report" width="1206" height="2622" loading="lazy" decoding="async">
+                        </figure>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">🔎</div>
+                        <h4>See What Actually Changed</h4>
+                        <p>Opening to closing balance, the same period compared against the one immediately before it, and a ranked category breakdown with each category's share.</p>
+                        <figure class="screenshot-frame small">
+                            <img src="images/feature-report-categories.png" alt="Balance movement, period comparison, and category breakdown" width="1206" height="2622" loading="lazy" decoding="async">
+                        </figure>
+                    </div>
+
+                    <div class="feature-item">
                         <div class="feature-icon">📝</div>
                         <h4>Entries & Tags</h4>
                         <p>Log income and expenses with a streamlined form, frequent-entry shortcuts, tags, dates, and payment options.</p>
                         <figure class="screenshot-frame small">
                             <img src="images/feature-entries-tags.png" alt="Entry form" width="1206" height="2622" loading="lazy" decoding="async">
+                        </figure>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Quick Add</h4>
+                        <p>Type one line — "Lunch 12 Food" — and the name, amount, and category fill in for you. It fills the form rather than saving, so you check before committing.</p>
+                        <figure class="screenshot-frame small">
+                            <img src="images/feature-quick-add.png" alt="Quick Add field" width="1206" height="2622" loading="lazy" decoding="async">
+                        </figure>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">🏷️</div>
+                        <h4>Category Suggestions</h4>
+                        <p>Tap a chip to reuse a category the plan already uses, so categories stop fragmenting into spelling variants.</p>
+                        <figure class="screenshot-frame small">
+                            <img src="images/feature-category-chips.png" alt="Category suggestion chips" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1131,6 +1168,15 @@
                         <p>Set card billing dates to track upcoming cycles and coverage.</p>
                         <figure class="screenshot-frame small">
                             <img src="images/feature-billing-day.png" alt="Billing day selection" width="1206" height="2622" loading="lazy" decoding="async">
+                        </figure>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">💾</div>
+                        <h4>Backup & Restore</h4>
+                        <p>One file captures a whole plan — entries, goals, recurring series, tags, auto-tag rules, scenarios, card aliases, and receipt images. Importing shows you exactly what the file holds before anything is written.</p>
+                        <figure class="screenshot-frame small">
+                            <img src="images/feature-plan-backup.png" alt="Plan backup and restore" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1243,8 +1289,18 @@
             </details>
 
             <details class="feature-category category-collapsible">
-                <summary><span class="category-heading">Reporting (Subscription)</span></summary>
+                <summary><span class="category-heading">Report Exports (Subscription)</span></summary>
+                <p class="category-subtitle">Reading the report is free. This tier is for turning it into a document you can send, file, or open in a spreadsheet.</p>
                 <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">📤</div>
+                        <h4>Export What You're Looking At</h4>
+                        <p>Export straight from the report using the period already on screen — no second filter step, and no chance the document disagrees with the screen.</p>
+                        <figure class="screenshot-frame small">
+                            <img src="images/feature-plan-report.png" alt="Exporting from the report screen" width="1206" height="2622" loading="lazy" decoding="async">
+                        </figure>
+                    </div>
+
                     <div class="feature-item">
                         <div class="feature-icon">📊</div>
                         <h4>Balance Sheet Reports</h4>
@@ -1256,10 +1312,10 @@
 
                     <div class="feature-item">
                         <div class="feature-icon">🧾</div>
-                        <h4>PDF & Excel Exports</h4>
-                        <p>Export professional reports with detailed entries and charts.</p>
+                        <h4>PDF, Excel & CSV</h4>
+                        <p>Four formats: a PDF report with charts and insights, a balance sheet, a multi-sheet Excel workbook, and raw CSV transaction rows.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-pdf-excel.png" alt="PDF and Excel export options" width="1206" height="2622" loading="lazy" decoding="async">
+                            <img src="images/feature-pdf-excel.png" alt="PDF, Excel, and CSV export options" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1383,7 +1439,7 @@
                     <div class="feature-item">
                         <div class="feature-icon">☁️</div>
                         <h4>CloudKit Sync and Plan Sharing</h4>
-                        <p>Sync budgets across iPhone and iPad automatically, then share selected plans with trusted iCloud participants when collaboration is needed.</p>
+                        <p>Sync budgets across iPhone and iPad automatically, then share selected plans with trusted iCloud participants. Their changes reach your totals, charts, and any open screen without relaunching. Stop sharing at any time — access is revoked, your plan and entries stay intact.</p>
                         <figure class="screenshot-frame small">
                             <img src="images/feature-cloudkit-sync.png" alt="CloudKit sync status" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
@@ -1427,7 +1483,7 @@
                 <div class="quick-compare-card">
                     <h3>Reporting</h3>
                     <p>Subscription tier</p>
-                    <p>PDF and Excel exports</p>
+                    <p>Export the free report as PDF, Excel, or CSV</p>
                     <p>Filters and branded reports</p>
                 </div>
                 <div class="quick-compare-card">
@@ -1494,18 +1550,26 @@
                 <div class="premium-tier featured">
                     <div class="tier-badge">Subscription</div>
                     <h3>📊 Reporting</h3>
-                    <p class="tier-description">Balance sheets, PDFs, Excel exports, and branded reporting. Includes all Insights & Goals features.</p>
+                    <p class="tier-description">Reading your plan's full report is free. This tier turns it into a document — PDF, balance sheet, Excel, or CSV — with branding and filtering. Includes all Insights & Goals features.</p>
 
                     <div class="tier-features">
                         <h4>What's Included:</h4>
                         <ul>
                             <li>
+                                <strong>Export the Period You're Viewing</strong>
+                                <p>The file covers exactly the period on screen, so the document can never disagree with the report.</p>
+                            </li>
+                            <li>
+                                <strong>PDF Reports</strong>
+                                <p>Polished documents with charts, insights, and detailed entry breakdowns.</p>
+                            </li>
+                            <li>
                                 <strong>Balance Sheet Reports</strong>
                                 <p>Date-range summaries with income, expenses, and net position.</p>
                             </li>
                             <li>
-                                <strong>PDF & Excel Exports</strong>
-                                <p>Polished reports with charts and detailed entry breakdowns.</p>
+                                <strong>Excel & CSV</strong>
+                                <p>Multi-sheet workbooks for analysis, or raw transaction rows for anything else.</p>
                             </li>
                             <li>
                                 <strong>Filters & Tag Scopes</strong>
@@ -1540,7 +1604,7 @@
 
                 <div class="premium-tier">
                     <div class="tier-badge">Subscription</div>
-                        <h3>🔧 Advanced Tools</h3>
+                    <h3>🔧 Advanced Tools</h3>
                     <p class="tier-description">Receipt scanning, bulk entry, automation, NLP tagging, smart digests, and intelligent notifications for power users who want maximum insight and control.</p>
 
                     <div class="tier-features">
@@ -1688,6 +1752,7 @@
             <div class="download-content">
                 <div class="download-features">
                     <div class="check-item">✓ Unlimited plans with core features</div>
+                    <div class="check-item">✓ The full financial report, free, for any period</div>
                     <div class="check-item">✓ iCloud sync and optional plan sharing</div>
                     <div class="check-item">✓ Apple Watch and widget support</div>
                     <div class="check-item">✓ Optional premium upgrades</div>
