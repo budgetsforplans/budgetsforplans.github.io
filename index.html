@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Budgets For Plans is a privacy-first personal finance planner for iPhone and iPad with on-device insights, iCloud sync, reporting, Siri shortcuts, and premium planning tools.">
+    <meta name="description" content="Private, manual-first budgeting for iPhone and iPad. Build plans, log spending quickly, see what is safe to spend, and sync with iCloud only if you choose.">
     <meta name="theme-color" content="#0EA5E9">
     <link rel="canonical" href="https://budgetsforplans.github.io/">
     <link rel="icon" href="images/app-icon.png">
     <link rel="apple-touch-icon" href="images/app-icon.png">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Budgets For Plans - Personal Finance Planner for iPhone and iPad">
-    <meta property="og:description" content="Plan, track, and improve your finances with on-device intelligence across iPhone and iPad while keeping your data in your Apple ecosystem.">
+    <meta property="og:description" content="Private, manual-first budgeting for iPhone and iPad. Build plans, log spending quickly, see what is safe to spend, and sync with iCloud only if you choose.">
     <meta property="og:url" content="https://budgetsforplans.github.io/">
     <meta property="og:image" content="https://budgetsforplans.github.io/images/screenshot-hero-dashboard.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Budgets For Plans - Personal Finance Planner for iPhone and iPad">
-    <meta name="twitter:description" content="Privacy-first budgeting with on-device insights, iCloud sync, reporting, Siri shortcuts, and iPad workflows.">
+    <meta name="twitter:description" content="Private, manual-first budgeting for iPhone and iPad. Build plans, log spending quickly, see what is safe to spend, and sync with iCloud only if you choose.">
     <meta name="twitter:image" content="https://budgetsforplans.github.io/images/screenshot-hero-dashboard.png">
     <title>Budgets For Plans - Personal Finance Planner for iPhone and iPad</title>
     <link rel="stylesheet" href="styles.css">
@@ -32,7 +32,7 @@
             </div>
             <ul class="nav-menu" id="primaryNavigation">
                 <li><a href="#privacy">Privacy</a></li>
-                <li><a href="#siri">Siri</a></li>
+                <li><a href="#safe-to-spend">Safe to Spend</a></li>
                 <li><a href="#ipad">iPad</a></li>
                 <li><a href="#scenario">How It Works</a></li>
                 <li><a href="#features">Features</a></li>
@@ -46,11 +46,11 @@
     <header class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">On-Device Insights. Privacy First.</h1>
-                <p class="hero-subtitle">Budgets For Plans helps you plan, track, and improve your finances with on-device intelligence across iPhone and iPad, while keeping your data in your Apple ecosystem.</p>
+                <h1 class="hero-title">Private Budgeting Without Bank Sync</h1>
+                <p class="hero-subtitle">Plan budgets, log spending quickly, and see what is safe to spend while your financial data stays on your device and in iCloud only if you enable sync.</p>
                 <div class="hero-buttons">
                     <a href="#download" class="btn btn-primary">Download on App Store</a>
-                    <a href="#scenario" class="btn btn-secondary">See How It Works</a>
+                    <a href="#safe-to-spend" class="btn btn-secondary">See Safe to Spend</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -65,12 +65,12 @@
     <!-- Privacy Section -->
     <section id="privacy" class="privacy">
         <div class="container">
-            <h2>Privacy by Design. Intelligence by Apple.</h2>
-            <p class="section-subtitle">All machine learning happens on your device using Apple's NaturalLanguage framework.</p>
+            <h2>Privacy First. No Bank Login Required.</h2>
+            <p class="section-subtitle">Manual-first budgeting with local storage by default and optional iCloud sync when you choose it.</p>
             <div class="privacy-grid">
                 <div class="privacy-card">
                     <h3>🔒 Your Data Stays Local</h3>
-                    <p>Insights and ML processing stay on-device. Budget data is stored locally and only syncs if you enable iCloud.</p>
+                    <p>Budget data is stored locally and only syncs if you enable iCloud. No bank login or account connection is required.</p>
                 </div>
                 <div class="privacy-card">
                     <h3>🚫 Zero Analytics</h3>
@@ -81,8 +81,47 @@
                     <p>Optional CloudKit sync uses your private iCloud database. You can also share a plan with trusted iCloud participants, with access managed by Apple's native sharing controls.</p>
                 </div>
                 <div class="privacy-card">
-                    <h3>🧠 On-Device ML</h3>
-                    <p>NLP, sentiment analysis, anomaly detection, and digest insights run locally on your device.</p>
+                    <h3>🧠 On-Device Suggestions</h3>
+                    <p>Auto-tagging suggestions, budget checks, and digest summaries are generated on device from the data you enter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safe to Spend Section -->
+    <section id="safe-to-spend" class="safe-spend">
+        <div class="container">
+            <h2>Know What Is Safe to Spend</h2>
+            <p class="section-subtitle">A clear daily answer based on your monthly budget, spending pace, and upcoming card window.</p>
+            <div class="safe-spend-grid">
+                <div class="safe-spend-card">
+                    <h3>Budget-aware</h3>
+                    <p>Safe to Spend starts with your monthly limit and subtracts expenses already logged this month.</p>
+                </div>
+                <div class="safe-spend-card">
+                    <h3>Card-aware</h3>
+                    <p>Upcoming card exposure is held back, so the dashboard stays conservative before bill day.</p>
+                </div>
+                <div class="safe-spend-card">
+                    <h3>Private by default</h3>
+                    <p>No bank sync or account aggregation. The estimate comes from the manual entries and settings on your device.</p>
+                </div>
+            </div>
+            <div class="safe-spend-visual">
+                <div class="safe-spend-metric">
+                    <span class="safe-spend-status">Safe to Spend</span>
+                    <strong>$420</strong>
+                    <p>After this month's spending and upcoming card window.</p>
+                </div>
+                <figure class="screenshot-frame">
+                    <img src="images/screenshot-hero-dashboard.png" alt="Dashboard showing Safe to Spend near the top" width="1206" height="2622" loading="lazy" decoding="async">
+                    <figcaption>Dashboard with Safe to Spend before charts and reports.</figcaption>
+                </figure>
+                <div class="safe-spend-breakdown">
+                    <span>Budget left</span>
+                    <strong>$760</strong>
+                    <span>Card window</span>
+                    <strong>$340</strong>
                 </div>
             </div>
         </div>
@@ -96,18 +135,18 @@
             <div class="overview-grid">
                 <div class="overview-card">
                     <div class="icon">📊</div>
-                    <h3>Plan-First Budgeting</h3>
-                    <p>Set up plans for annual budgets, projects, or savings targets with billing cadence, currency, and export preferences built in.</p>
+                    <h3>Manual-First Budgeting</h3>
+                    <p>Set up plans for households, projects, travel, or savings targets with currency, monthly budget, and billing day built in.</p>
                 </div>
                 <div class="overview-card">
-                    <div class="icon">🎯</div>
-                    <h3>Insights & Goals</h3>
-                    <p>Track cash-flow health, detect anomalies, and surface trend changes with in-app insights, goal milestones, and optional smart digests.</p>
+                    <div class="icon">✅</div>
+                    <h3>Safe to Spend</h3>
+                    <p>See a conservative daily estimate after current spending and upcoming card bills.</p>
                 </div>
                 <div class="overview-card">
-                    <div class="icon">🤖</div>
-                    <h3>On-Device Intelligence</h3>
-                    <p>On-device machine learning powers auto-tagging suggestions and digest insights—without sending your data to external servers.</p>
+                    <div class="icon">⚡</div>
+                    <h3>Quick Add and Receipt Capture</h3>
+                    <p>Log spending fast with quick entry, reusable tags, receipt scanning, and bulk entry tools when you need them.</p>
                 </div>
                 <div class="overview-card">
                     <div class="icon">📄</div>
@@ -116,7 +155,7 @@
                 </div>
                 <div class="overview-card">
                     <div class="icon">☁️</div>
-                    <h3>Sync and Share</h3>
+                    <h3>iCloud Sync and Sharing</h3>
                     <p>Sync with iCloud, share selected plans with trusted participants, glance at widgets, and check your plan on Apple Watch. Your data stays in your Apple ecosystem.</p>
                 </div>
                 <div class="overview-card">
@@ -141,14 +180,14 @@
     <!-- Intelligent Features Section -->
     <section class="ml-features">
         <div class="container">
-            <h2>Intelligence Built In. Privacy Protected.</h2>
-            <p class="section-subtitle">After your plan and entries are in place, on-device ML helps surface patterns and next steps. Your data syncs via iCloud only if you enable it.</p>
+            <h2>Helpful Suggestions. Privacy Protected.</h2>
+            <p class="section-subtitle">After your plan and entries are in place, local suggestions help surface patterns and next steps. Your data syncs via iCloud only if you enable it.</p>
 
             <div class="ml-grid">
                 <div class="ml-card">
                     <div class="ml-icon">🧠</div>
-                    <h3>ML-Powered Insights</h3>
-                    <p>Our digest engine analyzes your transactions to detect spending anomalies, identify trends, and assess sentiment—generating confidence-scored recommendations tailored to your patterns.</p>
+                    <h3>Digest Summaries</h3>
+                    <p>Digest summaries compare recent activity with your own history to highlight spending changes, budget health, and goal progress.</p>
                     <ul class="ml-features-list">
                         <li>Anomaly detection (3x median threshold)</li>
                         <li>Sentiment analysis (positive/neutral/negative)</li>
@@ -159,8 +198,8 @@
 
                 <div class="ml-card">
                     <div class="ml-icon">🏷️</div>
-                    <h3>NLP Auto-Tagging</h3>
-                    <p>Natural Language Processing understands transaction descriptions using sentence embeddings (iOS 17+) and semantic similarity—not just keywords.</p>
+                    <h3>Auto-Tagging Rules</h3>
+                    <p>On-device suggestions and rules help categorize familiar entries without sending transaction text to external services.</p>
                     <ul class="ml-features-list">
                         <li>Sentence embedding similarity matching</li>
                         <li>Regex and pattern-based rules</li>
@@ -171,7 +210,7 @@
 
                 <div class="ml-card">
                     <div class="ml-icon">📊</div>
-                    <h3>Advanced Analytics</h3>
+                    <h3>Planning Analytics</h3>
                     <p>Sophisticated metrics engine calculates 20+ insight types including spending pace, income volatility, category spikes, and bill coverage ratios.</p>
                     <ul class="ml-features-list">
                         <li>Median and outlier detection</li>
@@ -184,7 +223,7 @@
                 <div class="ml-card">
                     <div class="ml-icon">🔮</div>
                     <h3>Smart Digests</h3>
-                    <p>Weekly or monthly digests with ML-enhanced summaries, automatic headline generation, and trend comparisons based on historical patterns (30-day minimum). Every plan's digests land in one inbox, titled by the period they cover.</p>
+                    <p>Weekly or monthly digests with summary headlines and trend comparisons based on your history. Every plan's digests land in one inbox, titled by the period they cover.</p>
                     <ul class="ml-features-list">
                         <li>Sentiment-based headlines</li>
                         <li>Category-level insights (spending only — salary never tops your spend)</li>
@@ -459,18 +498,19 @@
                     <div class="scenario-step">
                         <div class="step-number">1</div>
                         <div class="step-content">
-                            <h3>Build her annual plan</h3>
-                            <p>She creates a yearly plan with a billing day, working currency, and plan preferences that fit her pay cycle.</p>
+                            <h3>Use guided setup</h3>
+                            <p>She chooses a household template, enters her monthly budget, selects a working currency, and sets the card billing day that matches her pay cycle.</p>
                             <div class="step-details">
                                 <ul>
-                                    <li><strong>Plan Name:</strong> 2025 Budget</li>
+                                    <li><strong>Plan Name:</strong> Monthly Budget 2026</li>
                                     <li><strong>Currency:</strong> USD</li>
+                                    <li><strong>Monthly Budget:</strong> $3,200</li>
                                     <li><strong>Billing Day:</strong> 15th</li>
                                 </ul>
                             </div>
                             <figure class="screenshot-frame">
                                 <img src="images/scenario-sarah-plan-setup.png" alt="Plan setup screen with currency and billing day" width="1206" height="2622" loading="lazy" decoding="async">
-                                <figcaption>Plan setup with currency and billing cadence.</figcaption>
+                                <figcaption>Guided plan setup with template, currency, budget, and billing day.</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -478,7 +518,25 @@
                     <div class="scenario-step">
                         <div class="step-number">2</div>
                         <div class="step-content">
-                            <h3>Track entries and tags</h3>
+                            <h3>Check Safe to Spend</h3>
+                            <p>The dashboard gives Sarah one daily answer before she opens charts: what is safe after current spending and upcoming card bills.</p>
+                            <div class="step-details">
+                                <ul>
+                                    <li>Monthly budget left after logged spending</li>
+                                    <li>Card window held back before bill day</li>
+                                </ul>
+                            </div>
+                            <figure class="screenshot-frame">
+                                <img src="images/screenshot-hero-dashboard.png" alt="Dashboard showing Safe to Spend" width="1206" height="2622" loading="lazy" decoding="async">
+                                <figcaption>Safe to Spend answers the day-to-day budget question.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="scenario-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Log entries and reuse tags</h3>
                             <p>Income and expenses are logged with tags, and search keeps her history easy to revisit.</p>
                             <div class="step-details">
                                 <ul>
@@ -494,33 +552,13 @@
                     </div>
 
                     <div class="scenario-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>Get ML-powered insights and track goals</h3>
-                            <p>The Insights Feed uses on-device machine learning to analyze her spending patterns, detect anomalies (like expenses 3x above her median), and track progress toward her vacation goal with milestone alerts.</p>
-                            <div class="step-details">
-                                <ul>
-                                    <li><strong>Anomaly Detection:</strong> Alerts when spending spikes unexpectedly</li>
-                                    <li><strong>Sentiment Analysis:</strong> Positive/neutral/negative cash flow assessment</li>
-                                    <li><strong>Goal Tracking:</strong> Milestone notifications as she approaches $3,000 target</li>
-                                    <li><strong>Smart Alerts:</strong> Budget threshold warnings before overspending</li>
-                                </ul>
-                            </div>
-                            <figure class="screenshot-frame">
-                                <img src="images/scenario-sarah-insights-goals.png" alt="Insights feed and goal progress cards" width="1206" height="2622" loading="lazy" decoding="async">
-                                <figcaption>ML-powered insights feed with goal progress.</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="scenario-step">
                         <div class="step-number">4</div>
                         <div class="step-content">
-                            <h3>Monitor charts and metrics</h3>
-                            <p>The triple chart carousel and metrics grid show daily position, month-to-date, and projected totals.</p>
+                            <h3>Track goals and reports</h3>
+                            <p>Goals, charts, insights, and reports help her understand the longer trend after the daily Safe to Spend answer.</p>
                             <figure class="screenshot-frame">
                                 <img src="images/scenario-sarah-charts-metrics.png" alt="Charts carousel with metrics grid" width="1206" height="2622" loading="lazy" decoding="async">
-                                <figcaption>Charts and metrics at a glance.</figcaption>
+                                <figcaption>Charts, goals, and metrics at a glance.</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -561,8 +599,8 @@
                     <div class="scenario-step">
                         <div class="step-number">3</div>
                         <div class="step-content">
-                            <h3>Receive intelligent digest summaries</h3>
-                            <p>ML-powered weekly digests automatically analyze her business spending, generate sentiment-based headlines, and provide confidence-scored recommendations—all processed on-device for complete privacy.</p>
+                            <h3>Receive digest summaries</h3>
+                            <p>Weekly digests summarize business spending, compare recent periods, and provide recommendations on-device.</p>
                             <div class="step-details">
                                 <ul>
                                     <li>Automatic period comparisons (this week vs. historical average)</li>
@@ -572,8 +610,8 @@
                                 </ul>
                             </div>
                             <figure class="screenshot-frame">
-                                <img src="images/feature-alerts-digests.png" alt="Digest settings and ML-enhanced summary" width="1206" height="2622" loading="lazy" decoding="async">
-                                <figcaption>ML-enhanced digest with insights and recommendations.</figcaption>
+                                <img src="images/feature-alerts-digests.png" alt="Digest settings and summary" width="1206" height="2622" loading="lazy" decoding="async">
+                                <figcaption>Digest with insights and recommendations.</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -626,19 +664,19 @@
                     <div class="scenario-step">
                         <div class="step-number">3</div>
                         <div class="step-content">
-                            <h3>Let AI handle the analysis</h3>
-                            <p>NLP-powered auto-tagging uses sentence embeddings to categorize expenses automatically—understanding "Uber to airport" and "Lyft ride" are both transportation without manual rules. Trends dashboard shows 3/6/12-month sparklines, and ML digests deliver weekly summaries with sentiment analysis and recommendations.</p>
+                            <h3>Review trends and digests</h3>
+                            <p>Auto-tagging suggestions help categorize familiar travel entries. Trends dashboard shows 3/6/12-month sparklines, and digests deliver weekly summaries with budget and goal context.</p>
                             <div class="step-details">
                                 <ul>
                                     <li><strong>NLP Auto-Tagging:</strong> 0.7+ similarity threshold for semantic matching</li>
                                     <li><strong>Trends Dashboard:</strong> Multi-period sparklines for income, net, and savings rate</li>
-                                    <li><strong>Smart Digests:</strong> ML-generated headlines and confidence-scored recommendations</li>
+                                    <li><strong>Smart Digests:</strong> Summary headlines and recommendations</li>
                                     <li><strong>Multi-Alert System:</strong> Bills, budgets, goals, and recurring payments</li>
                                 </ul>
                             </div>
                             <figure class="screenshot-frame">
                                 <img src="images/scenario-leo-trends-digests.png" alt="Trends dashboard and smart digest notifications" width="1206" height="2622" loading="lazy" decoding="async">
-                                <figcaption>NLP auto-tagging, trends, and ML-powered digest summaries.</figcaption>
+                                <figcaption>Auto-tagging, trends, and digest summaries.</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -1198,27 +1236,27 @@
             </details>
 
             <details class="feature-category ai-category category-collapsible">
-                <summary><span class="category-heading">AI & Machine Learning (On-Device)</span></summary>
-                <p class="category-subtitle">All ML processing happens locally. Your data stays in your Apple ecosystem.</p>
+                <summary><span class="category-heading">On-Device Suggestions</span></summary>
+                <p class="category-subtitle">Suggestions and summaries happen locally. Your data stays in your Apple ecosystem.</p>
                 <div class="feature-grid">
                     <div class="feature-item">
                         <div class="feature-icon">🧠</div>
-                        <h4>ML Digest Engine</h4>
-                        <p>Analyzes transaction history to detect trends, anomalies, and patterns. Generates sentiment-based summaries with confidence-scored recommendations.</p>
+                        <h4>Digest Summaries</h4>
+                        <p>Reviews transaction history to show trends, budget health, goal health, and practical recommendations.</p>
                         <div class="tech-badge">Requires: Advanced Tools</div>
                     </div>
 
                     <div class="feature-item">
                         <div class="feature-icon">🏷️</div>
-                        <h4>NLP Auto-Tagging</h4>
-                        <p>Uses Natural Language Processing and sentence embeddings (iOS 17+) to understand transaction descriptions semantically—not just keyword matching.</p>
+                        <h4>Auto-Tagging Suggestions</h4>
+                        <p>Uses local suggestions and rules to help categorize familiar transaction descriptions.</p>
                         <div class="tech-badge">Requires: Advanced Tools</div>
                     </div>
 
                     <div class="feature-item">
                         <div class="feature-icon">🎯</div>
-                        <h4>Anomaly Detection</h4>
-                        <p>Automatically flags transactions 3x above your median spending, helping catch errors or unexpected charges immediately.</p>
+                        <h4>Spending Spike Checks</h4>
+                        <p>Highlights transactions that stand out against your recent spending, helping catch errors or unexpected charges.</p>
                         <div class="tech-badge">Requires: Insights & Goals</div>
                     </div>
 
@@ -1231,8 +1269,8 @@
 
                     <div class="feature-item">
                         <div class="feature-icon">🔐</div>
-                        <h4>Privacy-First ML</h4>
-                        <p>All machine learning runs entirely on your device using Apple's NaturalLanguage framework. No cloud processing, no data collection, no analytics.</p>
+                        <h4>Privacy-First Processing</h4>
+                        <p>Planning checks run on your device. No third-party analytics, no bank sync, and no account aggregation.</p>
                         <div class="tech-badge">Always On</div>
                     </div>
                 </div>
@@ -1243,8 +1281,8 @@
                 <div class="feature-grid">
                     <div class="feature-item">
                         <div class="feature-icon">💡</div>
-                        <h4>Smart Cashflow & Bill Guard</h4>
-                        <p>Get alerts when you are at risk of running short before paychecks or bills.</p>
+                        <h4>Safe to Spend & Cash-Flow Outlook</h4>
+                        <p>See what remains after spending pace, budget limits, and upcoming card bills.</p>
                         <figure class="screenshot-frame small">
                             <img src="images/feature-cashflow-guard.png" alt="Cashflow guard alert" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
@@ -1279,8 +1317,8 @@
 
                     <div class="feature-item">
                         <div class="feature-icon">⚠️</div>
-                        <h4>Anomaly Detection</h4>
-                        <p>ML-powered alerts when transactions exceed 3x your median spending, helping catch errors or unexpected charges.</p>
+                        <h4>Spending Spike Checks</h4>
+                        <p>Highlights transactions that stand out against your recent spending, helping catch errors or unexpected charges.</p>
                         <figure class="screenshot-frame small">
                             <img src="images/feature-cashflow-guard.png" alt="Anomaly detection alert" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
@@ -1383,10 +1421,10 @@
 
                     <div class="feature-item">
                         <div class="feature-icon">🏷️</div>
-                        <h4>NLP Auto-Tagging</h4>
-                        <p>Machine learning-powered categorization using sentence embeddings and semantic similarity (iOS 17+). Supports exact match, contains, starts/ends with, and regex patterns—with confidence scoring and amount-based filtering.</p>
+                        <h4>Auto-Tagging</h4>
+                        <p>Suggestions and rules help classify repeated entries. Supports exact match, contains, starts/ends with, regex patterns, and amount-based filtering.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-auto-tagging.png" alt="NLP auto-tagging suggestions" width="1206" height="2622" loading="lazy" decoding="async">
+                            <img src="images/feature-auto-tagging.png" alt="Auto-tagging suggestions" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
 
@@ -1401,10 +1439,10 @@
 
                     <div class="feature-item">
                         <div class="feature-icon">🔔</div>
-                        <h4>Alerts & ML-Enhanced Digests</h4>
-                        <p>Comprehensive notification system for budgets, card bills, recurring payments, and goal milestones. Weekly/monthly digests feature ML-generated headlines, sentiment analysis, anomaly detection, and confidence-scored recommendations—all processed on-device.</p>
+                        <h4>Alerts & Digests</h4>
+                        <p>Comprehensive notification system for budgets, card bills, recurring payments, and goal milestones. Weekly/monthly digests summarize budget health, goal health, and spending trends on-device.</p>
                         <figure class="screenshot-frame small">
-                            <img src="images/feature-alerts-digests.png" alt="Alert settings and ML-enhanced digest" width="1206" height="2622" loading="lazy" decoding="async">
+                            <img src="images/feature-alerts-digests.png" alt="Alert settings and digest" width="1206" height="2622" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
@@ -1477,8 +1515,8 @@
                 <div class="quick-compare-card">
                     <h3>Insights & Goals</h3>
                     <p>One-time unlock</p>
-                    <p>Cashflow alerts and goals</p>
-                    <p>Anomaly and trend insights</p>
+                    <p>Safe to Spend and cash-flow outlook</p>
+                    <p>Goals and trend insights</p>
                 </div>
                 <div class="quick-compare-card">
                     <h3>Reporting</h3>
@@ -1489,7 +1527,7 @@
                 <div class="quick-compare-card">
                     <h3>Advanced Tools</h3>
                     <p>Subscription tier</p>
-                    <p>NLP tagging and digests</p>
+                    <p>Auto-tagging and digests</p>
                     <p>FX, recurring, trends, alerts</p>
                 </div>
                 <div class="quick-compare-card highlight">
@@ -1504,14 +1542,14 @@
                 <div class="premium-tier">
                     <div class="tier-badge">One-Time Purchase</div>
                     <h3>💡 Insights & Goals</h3>
-                    <p class="tier-description">Unlock smarter planning with cash-flow alerts, insights, goal tracking, and budget thresholds.</p>
+                    <p class="tier-description">Unlock smarter planning with Safe to Spend, cash-flow outlooks, insights, goal tracking, and budget thresholds.</p>
 
                     <div class="tier-features">
                         <h4>What's Included:</h4>
                         <ul>
                             <li>
-                                <strong>Smart Cashflow & Bill Guard</strong>
-                                <p>Alerts when projected cash runs short before paychecks or card bills.</p>
+                                <strong>Safe to Spend & Cash-Flow Outlook</strong>
+                                <p>See what remains after spending pace, budget limits, and upcoming card bills.</p>
                             </li>
                             <li>
                                 <strong>Insights Feed</strong>
@@ -1526,8 +1564,8 @@
                                 <p>20+ insight types including spending pace, income volatility, category spikes, bill coverage ratios, and risk assessment.</p>
                             </li>
                             <li>
-                                <strong>Anomaly Detection</strong>
-                                <p>ML-powered alerts when transactions exceed 3x your median spending.</p>
+                                <strong>Spending Spike Checks</strong>
+                                <p>Highlights when transactions stand out against your recent spending history.</p>
                             </li>
                         </ul>
                     </div>
@@ -1605,18 +1643,18 @@
                 <div class="premium-tier">
                     <div class="tier-badge">Subscription</div>
                     <h3>🔧 Advanced Tools</h3>
-                    <p class="tier-description">Receipt scanning, bulk entry, automation, NLP tagging, smart digests, and intelligent notifications for power users who want maximum insight and control.</p>
+                    <p class="tier-description">Receipt scanning, recurring entries, FX, auto-tagging, scenario planning, alerts, and digests for power users who want maximum insight and control.</p>
 
                     <div class="tier-features">
                         <h4>What's Included:</h4>
                         <ul>
                             <li>
-                                <strong>ML Digest Engine</strong>
-                                <p>Weekly/monthly digests with sentiment analysis, anomaly detection, and confidence-scored recommendations based on your historical patterns (30-day minimum).</p>
+                                <strong>Smart Digests</strong>
+                                <p>Weekly/monthly summaries with budget health, goal health, and recommendations based on your historical patterns.</p>
                             </li>
                             <li>
-                                <strong>NLP Auto-Tagging</strong>
-                                <p>Semantic matching using sentence embeddings (iOS 17+), regex patterns, and rule-based engine with confidence scoring and smart filtering.</p>
+                                <strong>Auto-Tagging</strong>
+                                <p>Suggestions and rules help classify repeated entries with smart filtering.</p>
                             </li>
                             <li>
                                 <strong>Card Aliases & Due-by-Card Summary</strong>
@@ -1637,6 +1675,10 @@
                             <li>
                                 <strong>FX Entry & Currency Breakdown</strong>
                                 <p>Auto-convert entries and see totals by currency.</p>
+                            </li>
+                            <li>
+                                <strong>Scenario Planner</strong>
+                                <p>Run what-if changes without editing real entries.</p>
                             </li>
                             <li>
                                 <strong>Trends Dashboard</strong>

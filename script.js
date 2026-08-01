@@ -40,7 +40,7 @@ if (!prefersReducedMotion.matches && 'IntersectionObserver' in window) {
     // Observe elements for animation.
     document.addEventListener('DOMContentLoaded', () => {
         const animatedElements = document.querySelectorAll(
-            '.overview-card, .feature-item, .scenario-step, .premium-tier'
+            '.overview-card, .safe-spend-card, .safe-spend-visual, .feature-item, .scenario-step, .premium-tier'
         );
 
         animatedElements.forEach(el => {
