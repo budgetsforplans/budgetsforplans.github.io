@@ -20,21 +20,26 @@ This folder contains a complete static website for the Budgets For Plans iOS app
 2. **Overview**
    - Value propositions covering plans, insights, reporting, sync and sharing, iPad, Siri, and privacy
 
-3. **On-Device Intelligence**
+3. **Guided Setup** (`#setup`)
+   - Household, freelancer, travel, project, student, and custom setup paths
+   - Template-aware plan avatars, starter categories, monthly budget suggestions, currency, and billing day
+
+4. **On-Device Intelligence**
    - ML features such as digest insights, anomaly detection, and NLP auto-tagging
 
-4. **iPad Features**
+5. **iPad Features**
    - Adaptive sidebar layouts, equal-width landscape detail columns, multi-window, drag & drop, keyboard shortcuts, and calendar heat map
 
-5. **User Scenarios**
+6. **User Scenarios**
    - Five real-world stories showing budgeting, reporting, travel, iPad workflows, and shared family planning
 
-6. **Advanced Planning** (`#planning`)
+7. **Advanced Planning** (`#planning`)
    - Scenario Planner and Budget & Goal Health, each with an expandable walkthrough
 
-7. **Complete Features List**
+8. **Complete Features List**
    - **Core Features** (Free):
      - Plans & Budgets
+     - Template-aware plan avatars and starter categories
      - Full plan report — every section, any period, free to read
      - Report scope controls (all time / 3 / 6 / 12 months / custom, category filter, household combine)
      - Entries & Tags
@@ -80,22 +85,22 @@ This folder contains a complete static website for the Budgets For Plans iOS app
      - Apple Watch app
      - Home screen widgets for balances, budget progress, transactions, trends, categories, and a large plan calendar
 
-8. **Premium Features**
+9. **Premium Features**
    - Insights & Goals (one-time)
    - Reporting (subscription)
    - Advanced Tools (subscription)
    - All Features Lifetime (one-time, Family Sharing eligible)
 
-9. **Technical Highlights**
+10. **Technical Highlights**
    - NaturalLanguage, Core Data + CloudKit, Swift Concurrency, SwiftUI + Observation, WidgetKit, StoreKit 2
 
-10. **Download Section**
+11. **Download Section**
    - Feature checklist, requirements, App Store badge
 
-11. **Privacy**
+12. **Privacy**
    - On-device ML with optional iCloud sync and plan sharing through Apple's native CloudKit controls
 
-12. **Footer**
+13. **Footer**
    - Navigation and support links
 
 ## 📸 Screenshots and Images
