@@ -343,6 +343,15 @@ summary:focus-visible {
     display: none;
 }
 
+/* A portrait screenshot standing on its own in a section rather than inside a card grid.
+   `.screenshot-frame` on its own fills the container, which for a 1206x2622 phone capture means
+   a figure several screens tall. Every other full-size frame is bounded by the grid column it
+   sits in, so a standalone one has to bring its own width. */
+.screenshot-frame.standalone {
+    max-width: 320px;
+    margin: var(--spacing-lg) auto 0;
+}
+
 /* ====================================
    Overview Section
    ==================================== */
