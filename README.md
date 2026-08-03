@@ -33,12 +33,22 @@ This folder contains a complete static website for the Budgets For Plans iOS app
 6. **User Scenarios**
    - Five real-world stories showing budgeting, reporting, travel, iPad workflows, and shared family planning
 
-7. **Advanced Planning** (`#planning`)
+7. **Loans & Deposits** (`#loans`)
+   - Mortgages, car loans, and fixed deposits tracked beside budget plans
+   - Projections, amortization schedule, mortgage rate changes, tracked payments, what-if, and PDF report
+   - Type grouping and the filter dock that appears once a list holds more than one kind
+
+8. **Advanced Planning** (`#planning`)
    - Scenario Planner and Budget & Goal Health, each with an expandable walkthrough
 
-8. **Complete Features List**
+9. **Complete Features List**
    - **Core Features** (Free):
      - Plans & Budgets
+     - Mortgages, car loans, and fixed deposits with projections and status
+     - Amortization schedule with mortgage rate changes
+     - Tracked loan payments compared against the estimated schedule
+     - Loan and deposit what-if comparisons
+     - Financial item report with PDF export
      - Template-aware plan avatars and starter categories
      - Full plan report — every section, any period, free to read
      - Report scope controls (all time / 3 / 6 / 12 months / custom, category filter, household combine)
