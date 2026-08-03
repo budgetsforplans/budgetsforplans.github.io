@@ -20,7 +20,7 @@ Most personal finance apps today fall into two camps: they either sell your data
 - **Privacy-First by Construction:** All processing runs locally. No third-party analytics, no telemetry, no data collection.
 - **One-Line Entry:** Type "Lunch 12 Food" and the name, amount, and category fill themselves in. It fills the form rather than saving, so you always review before committing.
 - **On-Device Receipt Scanning:** Snap a single receipt or batch-scan a stack — on-device OCR auto-fills the amount, date, and details for review, with no cloud upload.
-- **Pro iPad Workflow:** Not just a scaled-up phone app. Multi-window plan comparisons, drag-and-drop entries between plans, adaptive sidebars, equal-width landscape detail columns, calendar heat maps, and full keyboard shortcut support.
+- **Pro iPad Workflow:** Not just a scaled-up phone app. Multi-window plan comparisons, drag-and-drop entries between plans, adaptive sidebars, equal-width landscape detail columns, calendar heat maps that zoom from a month of days out to a year of months, and full keyboard shortcut support.
 - **Apple Watch:** Plan snapshots on your wrist — check balances and spending status without reaching for your phone.
 - **iCloud Plan Sharing:** Share selected plans with trusted iCloud participants and manage access using Apple's native CloudKit sharing controls.
 - **Scenario Planner:** What-if analysis with 9 modifier types. Compare a baseline vs. a modified scenario side-by-side without ever touching real data.

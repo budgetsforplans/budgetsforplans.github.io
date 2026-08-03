@@ -28,7 +28,7 @@ This folder contains a complete static website for the Budgets For Plans iOS app
    - ML features such as digest insights, anomaly detection, and NLP auto-tagging
 
 5. **iPad Features**
-   - Adaptive sidebar layouts, equal-width landscape detail columns, multi-window, drag & drop, keyboard shortcuts, and calendar heat map
+   - Adaptive sidebar layouts, equal-width landscape detail columns, multi-window, drag & drop, keyboard shortcuts, and a calendar heat map that zooms between month and year
 
 6. **User Scenarios**
    - Five real-world stories showing budgeting, reporting, travel, iPad workflows, and shared family planning
