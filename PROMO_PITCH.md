@@ -1,23 +1,23 @@
 # Promotional Pitch: Budgets For Plans
 
-This document contains ready-to-use pitches and outreach targets for global and regional (ASEAN / India) markets.
+This document contains a ready-to-use pitch and outreach targets.
 
 ---
 
-## The Pitch — Global (US/UK/AU)
+## The Pitch
 
-**Subject:** Privacy-first budgeting with on-device ML (and a killer iPad app)
+**Subject:** Privacy-first budgeting with no bank login (and a killer iPad app)
 
 Hi [Name/Editor],
 
 I'm reaching out because I've been following your coverage of [recent app/privacy/iPad topic] and wanted to share a project that fits that ethos: **Budgets For Plans**.
 
-Most personal finance apps today fall into two camps: they either sell your data to advertisers or they feel like clunky web-wrappers. I built **Budgets For Plans** to be different — it's a native iOS/iPadOS app that uses Apple's NaturalLanguage framework to deliver intelligent insights (anomaly detection, auto-tagging, spending trends) entirely on-device. No server, no data harvesting.
+Most personal finance apps today fall into two camps: they either sell your data to advertisers or they feel like clunky web-wrappers. I built **Budgets For Plans** to be different. It's a native iOS/iPadOS app that does all of its analysis — trend detection, anomaly spotting, auto-tagging — entirely on-device using Apple's own frameworks. No server, no data harvesting.
 
 ### Why it's worth a look
 
 - **The Full Report Is Free:** Read a complete financial report for any plan — balance movement, category breakdowns, budget vs actual, 50/30/20 allocation, recurring vs one-time, top drivers, goal progress — over any period, without paying. The subscription buys only the export (PDF, workbook, CSV). Most apps in this category put the analysis itself behind the paywall.
-- **Privacy-First Intelligence:** All ML processing runs locally using Apple's NaturalLanguage framework. No third-party analytics, no telemetry, no data collection.
+- **Privacy-First by Construction:** All processing runs locally. No third-party analytics, no telemetry, no data collection.
 - **One-Line Entry:** Type "Lunch 12 Food" and the name, amount, and category fill themselves in. It fills the form rather than saving, so you always review before committing.
 - **On-Device Receipt Scanning:** Snap a single receipt or batch-scan a stack — on-device OCR auto-fills the amount, date, and details for review, with no cloud upload.
 - **Pro iPad Workflow:** Not just a scaled-up phone app. Multi-window plan comparisons, drag-and-drop entries between plans, adaptive sidebars, equal-width landscape detail columns, calendar heat maps, and full keyboard shortcut support.
@@ -38,37 +38,7 @@ Cheers,
 
 ---
 
-## The Pitch — ASEAN & India
-
-**Subject:** On-device budgeting app for multi-currency users — no data ever leaves your phone
-
-Hi [Name/Editor],
-
-I'm reaching out because [publication] covers apps and tools that matter to [region]'s growing tech-savvy audience, and I think **Budgets For Plans** is a strong fit.
-
-It's a native iOS/iPadOS budgeting app built for people who manage money across currencies and borders — freelancers, business owners, frequent travelers, and expat workers. Everything runs on-device: the AI insights, auto-tagging, and anomaly detection all use Apple's on-device ML. No data ever leaves the phone.
-
-### Why it resonates in this market
-
-- **Multi-Currency & FX Tracking:** Log expenses in any currency with real FX breakdowns — useful whether you're earning in SGD and spending in INR, or managing client invoices in USD.
-- **100% On-Device:** No account sign-up, no cloud sync required. All your financial data stays on your device. Optional iCloud sync and selected plan sharing are the only exceptions, and they use Apple's CloudKit infrastructure.
-- **Free to Start:** The core budgeting features are completely free — including the full financial report for every plan, over any period. No paywall to get started, and no paywall on the analysis itself.
-- **Apple Watch App:** Check your balance and spending status from your wrist.
-- **Shared Plans:** Invite trusted family members or collaborators to selected plans with native iCloud sharing controls.
-- **Scenario Planner:** Model what happens if income changes or a big expense hits — compare baseline vs. modified scenarios without touching real data.
-- **Privacy-First Intelligence:** On-device ML for auto-tagging, anomaly detection, spending insights, and weekly digests.
-- **Siri & Shortcuts:** Log expenses by voice — especially useful in markets where typing while commuting is common.
-
-I'd love to offer a Promo Code for the Lifetime tier so you can explore the full feature set.
-
-Cheers,
-[Your Name]
-[App Store Link]
-[Website Link]
-
----
-
-## Where to Send It — Global
+## Where to Send It
 
 | Website | Focus Area | Contact / Method |
 | :--- | :--- | :--- |
@@ -83,46 +53,9 @@ Cheers,
 
 ---
 
-## Where to Send It — India
-
-| Website | Focus | Contact / Method |
-| :--- | :--- | :--- |
-| **iGyaan** | Apple ecosystem, iOS app reviews | `contact@igyaan.in` / Twitter @iGyaan |
-| **Gadgets360 (NDTV)** | Major Indian tech outlet, app reviews | `feedback@gadgets.ndtv.com` / tips form on site |
-| **TechPP** | Apple/iOS-focused Indian tech blog | `team@techpp.com` |
-| **Digit.in** | India's leading print & online tech magazine | `edit@digit.in` |
-| **Beebom** | App reviews and productivity | `hello@beebom.com` |
-| **BGR India** | Consumer tech reviews | `tips@bgr.in` |
-| **91mobiles** | Device & app reviews, large Indian audience | `editors@91mobiles.com` |
-| **The Mobile Indian** | Budget & value-focused tech reviews | Contact form on site |
-| **r/IndiaInvestments** | Personal finance community on Reddit | Post as a community resource/discussion |
-| **r/personalfinanceindia** | Reddit personal finance India | Post as a community resource/discussion |
-
-**Pitch angle for India:** Lead with on-device privacy (data sovereignty resonates strongly), multi-currency for freelancers and cross-border workers, and the free core tier. Mention Siri integration and Apple Watch for premium device users.
-
----
-
-## Where to Send It — ASEAN
-
-| Website | Focus | Contact / Method |
-| :--- | :--- | :--- |
-| **Vulcan Post** | SE Asian startup & tech coverage (SG, MY, PH) | `hello@vulcanpost.com` |
-| **Tech in Asia** | Premier SE Asian tech publication | `editorial@techinasia.com` |
-| **e27** | Singapore-based startup & product news | Submit via pitch form at e27.co |
-| **GadgetMatch** | SE Asian consumer tech reviews (PH, SG, MY) | `info@gadgetmatch.com` |
-| **YugaTech** | Philippines' leading tech blog | `editor@yugatech.com` |
-| **Revü** | Philippines tech & app reviews | `hello@revu.com.ph` |
-| **Lowyat.NET** | Malaysia's largest tech forum | Forum post + news tips form on site |
-| **HardwareZone** | Singapore tech reviews & forums | `editorial@hardwarezone.com.sg` |
-| **AppTipper** | App discovery for Asian markets | Submit via apptipper.com |
-
-**Pitch angle for ASEAN:** Lead with multi-currency tracking (SGD/MYR/PHP earners are common), on-device privacy (no data leaves the phone), Scenario Planner for financial what-if modeling, and the free entry point. Singapore and Malaysia have high Apple Watch penetration — mention the Watch app.
-
----
-
 ## App Quick Facts
 
-- **Platform:** iOS 16.0+ / iPadOS 16.0+ (Universal) + Apple Watch app
+- **Platform:** iOS 26.0+ / iPadOS 26.0+ (Universal) + Apple Watch app
 - **Key Tech:** Core Data + CloudKit sharing, NaturalLanguage framework, Swift Concurrency, SwiftUI (Observable Macro, iOS 17+), StoreKit 2, WidgetKit, WatchConnectivity
 - **Pricing:**
   - Free — unlimited plans, entry logging, charts, the full plan report, CSV import/export, backup & restore, Siri
@@ -130,5 +63,5 @@ Cheers,
   - Reporting — subscription (monthly or annual, 33% discount); exports only, reading the report is free
   - Advanced Tools — subscription (monthly or annual, 33% discount)
   - All Features Lifetime — one-time purchase, Family Sharing eligible
-- **Privacy:** No third-party analytics, no telemetry, no data collection. All ML runs on-device. Optional sync and plan sharing use iCloud/CloudKit.
+- **Privacy:** No third-party analytics, no telemetry, no data collection. All processing runs on-device. Optional sync and plan sharing use iCloud/CloudKit.
 - **Primary Link:** `https://budgetsforplans.github.io/`
