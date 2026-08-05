@@ -16,8 +16,9 @@ Most personal finance apps today fall into two camps: they either sell your data
 
 ### Why it's worth a look
 
-- **The Full Report Is Free:** Read a complete financial report for any plan — balance movement, category breakdowns, budget vs actual, 50/30/20 allocation, recurring vs one-time, top drivers, goal progress — over any period, without paying. The subscription buys only the export (PDF, workbook, CSV). Most apps in this category put the analysis itself behind the paywall.
-- **Privacy-First by Construction:** All processing runs locally. No third-party analytics, no telemetry, no data collection.
+- **The Full Report Is Free:** Read a complete financial report for any plan — a written summary, what stood out, balance movement, category breakdowns, budget vs actual, needs/wants/savings, regular vs one-off, goal progress — over any period, without paying. The subscription buys only the export (PDF, workbook, CSV). Most apps in this category put the analysis itself behind the paywall.
+- **Ask Your Own Budget:** Apple Intelligence runs on device to answer plain-language questions about your figures. The app does every calculation and the model only puts it into words; each answer lists the sources it was built from, it is read-only, and the conversation is never saved. A budgeting app can't ship a hallucinated number — so a generated summary that alters a figure is discarded before it's shown.
+- **Privacy-First by Construction:** All processing runs locally, including the language model. No third-party analytics, no telemetry, no data collection.
 - **One-Line Entry:** Type "Lunch 12 Food" and the name, amount, and category fill themselves in. It fills the form rather than saving, so you always review before committing.
 - **On-Device Receipt Scanning:** Snap a single receipt or batch-scan a stack — on-device OCR auto-fills the amount, date, and details for review, with no cloud upload.
 - **Pro iPad Workflow:** Not just a scaled-up phone app. Multi-window plan comparisons, drag-and-drop entries between plans, adaptive sidebars, equal-width landscape detail columns, calendar heat maps that zoom from a month of days out to a year of months, and full keyboard shortcut support.
@@ -56,12 +57,12 @@ Cheers,
 ## App Quick Facts
 
 - **Platform:** iOS 26.0+ / iPadOS 26.0+ (Universal) + Apple Watch app
-- **Key Tech:** Core Data + CloudKit sharing, NaturalLanguage framework, Swift Concurrency, SwiftUI (Observable Macro, iOS 17+), StoreKit 2, WidgetKit, WatchConnectivity
+- **Key Tech:** Foundation Models (on-device Apple Intelligence), Core Data + CloudKit sharing, NaturalLanguage framework, Swift Concurrency, SwiftUI (Observable Macro, iOS 17+), StoreKit 2, WidgetKit, WatchConnectivity
 - **Pricing:**
   - Free — unlimited plans, entry logging, charts, the full plan report, CSV import/export, backup & restore, Siri
   - Insights & Goals — one-time purchase
   - Reporting — subscription (monthly or annual, 33% discount); exports only, reading the report is free
-  - Advanced Tools — subscription (monthly or annual, 33% discount)
+  - Advanced Tools — subscription (monthly or annual, 33% discount); includes Ask, which additionally needs a device that supports Apple Intelligence
   - All Features Lifetime — one-time purchase, Family Sharing eligible
 - **Privacy:** No third-party analytics, no telemetry, no data collection. All processing runs on-device. Optional sync and plan sharing use iCloud/CloudKit.
 - **Primary Link:** `https://budgetsforplans.github.io/`

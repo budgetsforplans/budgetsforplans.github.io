@@ -20,28 +20,33 @@ This folder contains a complete static website for the Budgets For Plans iOS app
 2. **Overview**
    - Value propositions covering plans, insights, reporting, sync and sharing, iPad, Siri, and privacy
 
-3. **Guided Setup** (`#setup`)
+3. **Ask** (`#ask`)
+   - The on-device assistant: what it is, that Apple Intelligence runs locally, that the app does the arithmetic, sources under every answer, read-only, never saved
+   - States its requirements (Advanced Tools, plus a device with Apple Intelligence turned on)
+
+4. **Guided Setup** (`#setup`)
    - Household, freelancer, travel, project, student, and custom setup paths
    - Template-aware plan avatars, starter categories, monthly budget suggestions, currency, and billing day
 
-4. **On-Device Intelligence**
+5. **On-Device Intelligence**
+   - Ask and the plain-English report summary, both generated on device with Apple Intelligence
    - ML features such as digest insights, anomaly detection, and NLP auto-tagging
 
-5. **iPad Features**
+6. **iPad Features**
    - Adaptive sidebar layouts, equal-width landscape detail columns, multi-window, drag & drop, keyboard shortcuts, and a calendar heat map that zooms between month and year
 
-6. **User Scenarios**
+7. **User Scenarios**
    - Five real-world stories showing budgeting, reporting, travel, iPad workflows, and shared family planning
 
-7. **Loans & Deposits** (`#loans`)
+8. **Loans & Deposits** (`#loans`)
    - Mortgages, car loans, and fixed deposits tracked beside budget plans
    - Projections, amortization schedule, mortgage rate changes, tracked payments, what-if, and PDF report
-   - Type grouping and the filter dock that appears once a list holds more than one kind
+   - Type grouping, collapsible sections, and the filter dock that appears once a list holds more than one kind
 
-8. **Advanced Planning** (`#planning`)
+9. **Advanced Planning** (`#planning`)
    - Scenario Planner and Budget & Goal Health, each with an expandable walkthrough
 
-9. **Complete Features List**
+10. **Complete Features List**
    - **Core Features** (Free):
      - Plans & Budgets
      - Mortgages, car loans, and fixed deposits with projections and status
@@ -64,6 +69,8 @@ This folder contains a complete static website for the Budgets For Plans iOS app
      - Archive plans
      - Siri & Shortcuts (five voice actions)
    - **On-Device Intelligence**:
+     - Ask — questions answered from your own figures, generated on device (Advanced Tools + Apple Intelligence)
+     - Reports in plain English — the report summary rewritten on device (Advanced Tools + Apple Intelligence)
      - Digest insights, NLP auto-tagging, and anomaly detection (tier-dependent)
    - **Insights & Goals** (One-time purchase):
      - Smart Cashflow & Bill Guard
@@ -72,10 +79,12 @@ This folder contains a complete static website for the Budgets For Plans iOS app
      - Budget thresholds and monthly limits
    - **Report Exports** (Subscription):
      - Exports the period already on screen — the document cannot disagree with the report
-     - PDF reports, balance sheet reports, Excel workbooks, and CSV
+     - PDF reports, balance sheet reports, Excel workbooks (a sheet per topic, linked Contents page, and a Charts sheet), and CSV
      - Filters and custom branding
      - Note: reading the report itself is free; this tier is only the export
    - **Advanced Tools** (Subscription):
+     - Ask (needs a device that supports Apple Intelligence)
+     - Reports in plain English
      - Card aliases
      - Recurring expenses
      - Receipt scanning (single & batch, on-device OCR)
@@ -95,22 +104,22 @@ This folder contains a complete static website for the Budgets For Plans iOS app
      - Apple Watch app
      - Home screen widgets for balances, budget progress, transactions, trends, categories, and a large plan calendar
 
-9. **Premium Features**
+11. **Premium Features**
    - Insights & Goals (one-time)
    - Reporting (subscription)
    - Advanced Tools (subscription)
    - All Features Lifetime (one-time, Family Sharing eligible)
 
-10. **Technical Highlights**
-   - NaturalLanguage, Core Data + CloudKit, Swift Concurrency, SwiftUI + Observation, WidgetKit, StoreKit 2
+12. **Technical Highlights**
+   - Foundation Models (Apple Intelligence, on device), NaturalLanguage, Core Data + CloudKit, Swift Concurrency, SwiftUI + Observation, WidgetKit, StoreKit 2
 
-11. **Download Section**
+13. **Download Section**
    - Feature checklist, requirements, App Store badge
 
-12. **Privacy**
+14. **Privacy**
    - On-device ML with optional iCloud sync and plan sharing through Apple's native CloudKit controls
 
-13. **Footer**
+15. **Footer**
    - Navigation and support links
 
 ## 📸 Screenshots and Images
